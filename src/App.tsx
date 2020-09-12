@@ -7,6 +7,7 @@ import DeFi from './Views/DeFi'
 import PersonalProffiency from './Views/PersonalProffiency'
 import Projects from './Views/Projects'
 import Me from './Views/Me'
+import Work from './Views/Work'
 //other imports
 import styled from 'styled-components'
 import {
@@ -52,6 +53,9 @@ const Home: React.FC = () => {
             <Route path="/sam" exact>
               <Me/>
             </Route>
+            <Route path="/work" exact>
+              <Work/>
+            </Route>
           </Switch>
         </Router>
           </StyledDiv>
@@ -72,6 +76,18 @@ const Home: React.FC = () => {
             <Route path="/dapps" exact>
               <DeFi />
             </Route>
+            <Route path="/knowledge" exact>
+              <PersonalProffiency/>
+            </Route>
+            <Route path="/projects" exact>
+              <Projects/>
+            </Route>
+            <Route path="/sam" exact>
+              <Me/>
+            </Route>
+            <Route path="/work" exact>
+              <Work/>
+            </Route>
           </Switch>
         </Router>
           </StyledDiv>
@@ -82,7 +98,7 @@ const Home: React.FC = () => {
 
 }
 
-const StyledDiv = styled.div`
+const StyledDiv = styled.main`
 display: flex;
 flex-flow: column;
 margin-left: auto;
@@ -91,7 +107,7 @@ border-radius: 4px;
 justify-content: center;
 width: 80%;
 height: 90%;
-background-color: #008B8B;
+background-color: #006464;
 `
 const StyledSpacer = styled.div`
 height: 15px;

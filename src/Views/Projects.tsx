@@ -57,17 +57,8 @@ const Projects: React.FC = () =>{
         </StyledContainer>
     )
 }
-
-// const Tooltip = styled.span`
-//   visibility: hidden;
-//   width: 120px;
-//   background-color: black;
-//   color: #fff;
-//   text-align: center;
-//   border-radius: 6px;
-//   padding: 5px 0;
-  
-// `
+//https://hackmd.io/dzNoTP1YT72iUxgRPVU-vw?view
+///figure out a thumbnail for how to show this
 
 const StyledHeader = styled.h3`
     text-align: center;
@@ -106,7 +97,7 @@ border: 1px solid white;
 border-radius: 8px;
 &:hover {
     background-color: white;
-    color: #008B8B;
+    color: #006464;
 }
 }
 @media (max-width: 900px){
@@ -159,6 +150,6 @@ border-radius: 4px;
 justify-content: center;
 width: 80%;
 height: 90%;
-background-color: #008B8B;
+background-color: #006464;
 `
 export default Projects;

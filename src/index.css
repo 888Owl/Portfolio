@@ -5,6 +5,7 @@
 }
 
 .body_dark{
+  font-display: optional;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -16,6 +17,7 @@
 }
 
 .body_light{
+  font-display: optional;
   height: 100vh;
   width: 100vw;
   display: flex;
