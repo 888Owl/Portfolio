@@ -38,13 +38,14 @@ const Me: React.FC = () => {
             <StyledHeader>About me</StyledHeader>
             <Styledimg src={me} alt='Sam Swift' />
             <StyledCountdownText><StyledCountdownTitle>My age: </StyledCountdownTitle>{myAge}</StyledCountdownText>
-            <StyledCountdownText><StyledCountdownTitle>Years building Profesionaly: </StyledCountdownTitle>{yearsBuilding}</StyledCountdownText>
-            <StyledCountdownText><StyledCountdownTitle>Years coding Profesionaly: </StyledCountdownTitle>{yearsCoding}</StyledCountdownText>
+            <StyledCountdownText><StyledCountdownTitle>Years Building Professionally: </StyledCountdownTitle>{yearsBuilding}</StyledCountdownText>
+            <StyledCountdownText><StyledCountdownTitle>Years Coding Professionally: </StyledCountdownTitle>{yearsCoding}</StyledCountdownText>
             <br/>
-            <StyledtopP>As long as I can remember I have had a passion for technology and for building, whether it was legos, houses or widgets just for me.</StyledtopP>
+            <StyledtopP>As long as I can remember, I have had a passion for technology and for building, whether it was legos, houses or widgets just for me.</StyledtopP>
             <StyledP>My long term goal is to never stop learning new programming languages and find a way to use BlockChain for good.</StyledP>
             <StyledP> I see its limitless potential when it comes to a fair and just society, although it is currently tightly entangled with finance and not being truly utilized.</StyledP>
-            <StyledP>I am a passionate person and I have many hobbies, such as snorkeling, hiking, making bad jokes that only I laugh at, reading about robotics and other new and exciting technologies, and most importantly eating.</StyledP>
+            <StyledP>I am a passionate person and I have many hobbies, such as snorkeling, archery, hiking, making bad jokes that only I laugh at, reading about robotics and other new and exciting technologies, I am also open water dive certified and most importantly I love eating (我愛臭豆腐).</StyledP>
+            <StyledP>I currently spend my free time on week nights trying to progress at learning backend technologies (Node.JS & MySQL for now) and studying Mandarin. During my weekends I spend time on either my hobbies or exploring more of Taiwan. </StyledP>
         </StyledContainer>
     )
 }
