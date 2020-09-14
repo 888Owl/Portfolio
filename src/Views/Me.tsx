@@ -58,8 +58,14 @@ const StyledCountdownTitle = styled.span`
    font-weight: 700;
 `
 const StyledHeader = styled.h3`
-    margin-top:80px;
+    @media (min-width: 900px){
+        margin-top: 50px;
     text-align: center;
+       }
+       @media (max-width: 900px){
+        margin-top:550px;
+        text-align: center;
+       }
 `
 
 const StyledSections = styled(NavLink)`

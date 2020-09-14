@@ -40,7 +40,6 @@ const PersonalProffiency: React.FC = () => {
                 <StyledImg src={javascript}/>
                 </StyledInnerGrouping>
                 </StyledInnerContainer>
-
                 <VerticalSpacer />
                 <StyledInnerContainer>
                 <StyledInnerGrouping>

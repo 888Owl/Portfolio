@@ -133,9 +133,7 @@ const StyledSectionsHolder = styled.nav`
 
 const StyledExternalLink = styled.a`
 text-decoration: none;
-color: unset;
-border: 1px solid white;
-border-radius: 8px;
+color: yellow;
 padding: 1px;
 &:hover {
     background-color: white;

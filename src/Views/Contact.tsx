@@ -19,8 +19,9 @@ useEffect(() => {
             <StyledSectionsHolder>
         <StyledSections to='/' exact><img width="30px" height="30px" src={house} alt='house to show that this is a button to home'/></StyledSections>
         </StyledSectionsHolder>
-        {qrsize && <StyledHeader>Links and their respective QRCodes for contacting me.</StyledHeader>}
-        {!qrsize && <StyledHeader>Links for contacting me.</StyledHeader>}
+        <StyledHeader>If you can see this then you can probably already contact me however if not then here are,</StyledHeader>
+        {qrsize && <StyledHeader>links and their respective QRCodes for contacting me.</StyledHeader>}
+        {!qrsize && <StyledHeader>links for contacting me.</StyledHeader>}
             <StyledInnerContainer>
                 <StyledInnerGrouping>
             {qrsize && <QRcode size={87} value={"https://t.me/SamInTaiwan"} />}
@@ -85,7 +86,7 @@ height: 15%;
 const StyledLink = styled.a`
 @media (min-width: 900px){
 text-decoration: none;
-color: unset;
+color: yellow;
 border-radius: 8px;
 width: 83px;
 &:hover {
