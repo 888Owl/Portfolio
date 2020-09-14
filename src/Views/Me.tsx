@@ -45,6 +45,7 @@ const Me: React.FC = () => {
             <StyledP>My long term goal is to never stop learning new programming languages and find a way to use BlockChain for good.</StyledP>
             <StyledP> I see its limitless potential when it comes to a fair and just society, although it is currently tightly entangled with finance and not being truly utilized.</StyledP>
             <StyledP>I am a passionate person and I have many hobbies, such as snorkeling, hiking, making bad jokes that only I laugh at, reading about robotics and other new and exciting technologies, and most importantly eating.</StyledP>
+            
         </StyledContainer>
     )
 }
