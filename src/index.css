@@ -40,12 +40,16 @@ body{
 }
 @media (min-width: 900px){
 @keyframes floatLeft {
-  from {left: -20%;}
-  to {left: 15%;}
+  from {margin-right: 100%;
+    margin-left: -50%;}
+  to {margin-right: 100%;
+    margin-left: 50%;}
 }
 @keyframes floatRight {
-  from {right: -20%;}
-  to {right: 15%;}
+  from {margin-left: 100%;
+    margin-right: -50%;}
+  to {margin-left: 100%;
+    margin-right: 50%;}
 }
 @keyframes floatUp {
   from {top: -20%;}
@@ -68,6 +72,6 @@ body{
   }
   @keyframes floatUp {
     from {top: -20%;}
-    to {top: 25%;}
+    to {top: 15%;}
   }
   }

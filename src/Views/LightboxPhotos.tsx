@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 
@@ -35,56 +35,60 @@ const Lightbox: React.FC = () => {
 }
 const StyledGroupLeft = styled.div`
 @media (min-width: 900px){
-width: 256px;
+width: 20%;
 position: absolute;
 animation: floatLeft;
 animation-duration: 2s;
 top: 30%;
-left: 15%;
+margin-right: 100%;
+margin-left: 50%;
 }
 @media (max-width: 900px){
     width: 256px;
     position: absolute;
     animation: floatLeft;
     animation-duration: 2s;
-    top: 60%;
+    top: 70%;
     margin-left: auto;
     margin-right: auto;
     }
 `
 const StyledGroupRight = styled.div`
 @media (min-width: 900px){
-width: 256px;
+width: 20%;
 position: absolute;
 animation: floatRight;
 animation-duration: 2s;
 top: 30%;
-right: 15%;
+margin-left: 100%;
+margin-right: 50%;
 }
 @media (max-width: 900px){
     width: 256px;
     position: absolute;
     animation: floatRight;
     animation-duration: 2s;
+    top: 42%;
     margin-left: auto;
     margin-right: auto;
     }
 `
 const StyledGroupCenter = styled.div`
 @media (min-width: 900px){
-width: 256px;
+width: 20%;
 position: absolute;
 animation: floatUp;
 animation-duration: 2s;
 top: 30%;
-right: 41.5%;
+margin-left: auto;
+margin-right: auto;
 }
 @media (max-width: 900px){
     width: 256px;
     position: absolute;
     animation: floatUp;
     animation-duration: 2s;
-    top: 25%;
+    top: 15%;
     margin-left: auto;
     margin-right: auto;
     }
@@ -102,7 +106,7 @@ const Styledh1 = styled.p`
 `
 const StyledPhoto = styled.img`
 @media (min-width: 900px){
-    width: 256px;
+    width: 100%;
 }
 @media (max-width: 900px){
     width: 140px;
