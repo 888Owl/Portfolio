@@ -38,7 +38,7 @@ body{
   background-color: #FFFFFF;
   color: #000000;
 }
-
+@media (min-width: 900px){
 @keyframes floatLeft {
   from {left: -20%;}
   to {left: 15%;}
@@ -51,3 +51,23 @@ body{
   from {top: -20%;}
   to {top: 30%;}
 }
+}
+
+@media (max-width: 900px){
+  @keyframes floatLeft {
+    from {margin-left: 100%;
+      margin-right: 50%;}
+    to {margin-left: 50%;
+      margin-right: 50%;}
+  }
+  @keyframes floatRight {
+    from {margin-left: 50%;
+      margin-right: 100%;}
+    to {margin-left: 50%;
+      margin-right: 50%;}
+  }
+  @keyframes floatUp {
+    from {top: -20%;}
+    to {top: 25%;}
+  }
+  }

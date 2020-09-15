@@ -12,12 +12,13 @@ const Introduction: React.FC = () => {
   )
 }
 const StyledDiv = styled.div`
+    position: absolute:
+    top: 5%;
+    text-align: center;
     display: flex;
     flex-flow: column;
 `
 const Styledh1 = styled.p`
-    margin-top: 5%;
-    margin-bottom: 0px;
     font-size: 34px;
 `
 const StyledNote = styled.p`

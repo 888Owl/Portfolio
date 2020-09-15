@@ -7,11 +7,10 @@ import myTime from '../Images/Me_in_taiwan_collage.png'
 import photography from '../Images/Photography_collage.png'
 import animals from '../Images/Animals_collage.png'
 
-
 const Lightbox: React.FC = () => {
     const nameArr = ['My Time in Taiwan', 'Photography of mine', 'My Little Friends']
     const photoArr = [myTime, photography, animals]
-    const altArr = ['A collage of my time in Taiwan', 'A collage of my photography and my star model', 'Very cute animals that never ruined any furniture...I swear.']
+    const altArr = ['A collage of my time in Taiwan', 'A collage of my photography and my star model', 'A collage of very cute animals that never ruined any furniture...I swear.']
 
     return (
         <StyledDiv>
@@ -35,28 +34,60 @@ const Lightbox: React.FC = () => {
     )
 }
 const StyledGroupLeft = styled.div`
+@media (min-width: 900px){
 width: 256px;
 position: absolute;
 animation: floatLeft;
-animation-duration: 1s;
+animation-duration: 2s;
 top: 30%;
 left: 15%;
+}
+@media (max-width: 900px){
+    width: 256px;
+    position: absolute;
+    animation: floatLeft;
+    animation-duration: 2s;
+    top: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    }
 `
 const StyledGroupRight = styled.div`
+@media (min-width: 900px){
 width: 256px;
 position: absolute;
 animation: floatRight;
-animation-duration: 1s;
+animation-duration: 2s;
 top: 30%;
 right: 15%;
+}
+@media (max-width: 900px){
+    width: 256px;
+    position: absolute;
+    animation: floatRight;
+    animation-duration: 2s;
+    margin-left: auto;
+    margin-right: auto;
+    }
 `
 const StyledGroupCenter = styled.div`
+@media (min-width: 900px){
 width: 256px;
 position: absolute;
 animation: floatUp;
-animation-duration: 1s;
+animation-duration: 2s;
 top: 30%;
 right: 41.5%;
+}
+@media (max-width: 900px){
+    width: 256px;
+    position: absolute;
+    animation: floatUp;
+    animation-duration: 2s;
+    top: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    }
 `
 const StyledDiv = styled.div`
     display: flex;
@@ -70,7 +101,12 @@ const Styledh1 = styled.p`
     font-size: 22px;
 `
 const StyledPhoto = styled.img`
-width: 256px;
+@media (min-width: 900px){
+    width: 256px;
+}
+@media (max-width: 900px){
+    width: 140px;
+}
 `
 const StyledSpacer = styled.div`
 height: 15px;
