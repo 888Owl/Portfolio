@@ -39,18 +39,21 @@ body{
   color: #000000;
 }
 @media (min-width: 900px){
+  /* left */
 @keyframes floatLeft {
-  from {margin-right: 100%;
-    margin-left: -50%;}
+  from {margin-right: -50%;
+    margin-left: 100%;}
   to {margin-right: 100%;
-    margin-left: 50%;}
+    margin-left: 55%;}
 }
+/* right */
 @keyframes floatRight {
-  from {margin-left: 100%;
-    margin-right: -50%;}
-  to {margin-left: 100%;
-    margin-right: 50%;}
+  from {margin-left: -50%;
+    margin-right: 100%;}
+  to {margin-left: 5%;
+    margin-right: 100%;}
 }
+/* down */
 @keyframes floatUp {
   from {top: -20%;}
   to {top: 30%;}

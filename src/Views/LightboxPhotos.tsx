@@ -13,11 +13,13 @@ const Lightbox: React.FC = () => {
     const altArr = ['A collage of my time in Taiwan', 'A collage of my photography and my star model', 'A collage of very cute animals that never ruined any furniture...I swear.']
 
     return (
+        <>
         <StyledDiv>
             <StyledSectionsHolder>
                 <StyledSections to='/' exact><img width="30px" height="30px" src={house} alt='House to show that this is a button to the home page' /></StyledSections>
             </StyledSectionsHolder>
-            <StyledGroupLeft>
+        </StyledDiv>
+                <StyledGroupLeft>
                 <Styledh1>{nameArr[0]}</Styledh1>
                 <StyledPhoto alt={altArr[0]} src={photoArr[0]} />
                 </StyledGroupLeft>
@@ -29,10 +31,10 @@ const Lightbox: React.FC = () => {
                 <Styledh1>{nameArr[2]}</Styledh1>
                 <StyledPhoto alt={altArr[2]} src={photoArr[2]} />
                 </StyledGroupRight>
-            <StyledSpacer />
-        </StyledDiv>
+        </>
     )
 }
+// left
 const StyledGroupLeft = styled.div`
 @media (min-width: 900px){
 width: 20%;
@@ -41,7 +43,7 @@ animation: floatLeft;
 animation-duration: 2s;
 top: 30%;
 margin-right: 100%;
-margin-left: 50%;
+margin-left: 55%;
 }
 @media (max-width: 900px){
     width: 256px;
@@ -53,6 +55,7 @@ margin-left: 50%;
     margin-right: auto;
     }
 `
+// right
 const StyledGroupRight = styled.div`
 @media (min-width: 900px){
 width: 20%;
@@ -60,8 +63,8 @@ position: absolute;
 animation: floatRight;
 animation-duration: 2s;
 top: 30%;
-margin-left: 100%;
-margin-right: 50%;
+margin-left: 5%;
+margin-right: 100%;
 }
 @media (max-width: 900px){
     width: 256px;
@@ -73,6 +76,7 @@ margin-right: 50%;
     margin-right: auto;
     }
 `
+// down
 const StyledGroupCenter = styled.div`
 @media (min-width: 900px){
 width: 20%;
@@ -80,8 +84,8 @@ position: absolute;
 animation: floatUp;
 animation-duration: 2s;
 top: 30%;
-margin-left: auto;
-margin-right: auto;
+margin-left: 30%;
+margin-right: 100%;
 }
 @media (max-width: 900px){
     width: 256px;
