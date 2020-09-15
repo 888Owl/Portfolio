@@ -15,3 +15,5 @@ declare module 'react-qr-code' {
   
     export default QRCode
   }
+
+  declare module '*.pdf'
