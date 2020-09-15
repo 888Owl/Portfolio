@@ -11,6 +11,7 @@ const HomePageRouter: React.FC = () => {
             <StyledSections4 to='/knowledge' exact activeClassName="fourthSection" >Tools</StyledSections4>
             <StyledSections5 to='/dapps' exact activeClassName="fifthSection" >Dapps</StyledSections5>
             <StyledSections6 to='/socials' exact activeClassName="sixthSection" >Contact</StyledSections6>
+            <StyledSections7 to='/collages' exact activeClassName="sixthSection" >Collages</StyledSections7>
         </StyledSectionsHolder>
     )
 }
@@ -104,6 +105,23 @@ const StyledSections5 = styled(NavLink)`
 `
 
 const StyledSections6 = styled(NavLink)`
+    height: 10%;
+    width: 100%;
+    padding:2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 26px;
+    color: unset;
+    @media (min-width: 900px){
+        &:hover {
+        background-color: palevioletred;
+        color: white;
+      }
+    }
+`
+const StyledSections7 = styled(NavLink)`
     height: 10%;
     width: 100%;
     padding:2%;

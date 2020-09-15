@@ -8,6 +8,7 @@ import PersonalProffiency from './Views/PersonalProffiency'
 import Projects from './Views/Projects'
 import Me from './Views/Me'
 import Work from './Views/Work'
+import Lightbox from './Views/LightboxPhotos'
 //utility imports
 import styled from 'styled-components'
 import {
@@ -29,72 +30,78 @@ const Home: React.FC = () => {
   }, [setLikesDark])
 
   return (<>
-      {likesDark ?
-        <div className="body_dark">
-          <StyledDiv>
+    {likesDark ?
+      <div className="body_dark">
+        <StyledDiv>
           <Router>
-          <Switch>
-            <Route path="/" exact>
-              <Introduction />
-              <StyledSpacer />
-              <HomePageRouter />
-            </Route>
-            <Route path="/socials" exact>
-              <Contact />
-            </Route>
-            <Route path="/dapps" exact>
-              <DeFi />
-            </Route>
-            <Route path="/knowledge" exact>
-              <PersonalProffiency/>
-            </Route>
-            <Route path="/projects" exact>
-              <Projects/>
-            </Route>
-            <Route path="/sam" exact>
-              <Me/>
-            </Route>
-            <Route path="/work" exact>
-              <Work/>
-            </Route>
-          </Switch>
-        </Router>
-          </StyledDiv>
-        </div>
-        :
-        <div className="body_light">
-          <StyledDiv>
+            <Switch>
+              <Route path="/" exact>
+                <Introduction />
+                <StyledSpacer />
+                <HomePageRouter />
+              </Route>
+              <Route path="/socials" exact>
+                <Contact />
+              </Route>
+              <Route path="/dapps" exact>
+                <DeFi />
+              </Route>
+              <Route path="/knowledge" exact>
+                <PersonalProffiency />
+              </Route>
+              <Route path="/projects" exact>
+                <Projects />
+              </Route>
+              <Route path="/sam" exact>
+                <Me />
+              </Route>
+              <Route path="/work" exact>
+                <Work />
+              </Route>
+              <Route path="/collages" exact>
+                <Lightbox />
+              </Route>
+            </Switch>
+          </Router>
+        </StyledDiv>
+      </div>
+      :
+      <div className="body_light">
+        <StyledDiv>
           <Router>
-          <Switch>
-            <Route path="/" exact>
-              <Introduction />
-              <StyledSpacer />
-              <HomePageRouter />
-            </Route>
-            <Route path="/contact" exact>
-              <Contact />
-            </Route>
-            <Route path="/dapps" exact>
-              <DeFi />
-            </Route>
-            <Route path="/knowledge" exact>
-              <PersonalProffiency/>
-            </Route>
-            <Route path="/projects" exact>
-              <Projects/>
-            </Route>
-            <Route path="/sam" exact>
-              <Me/>
-            </Route>
-            <Route path="/work" exact>
-              <Work/>
-            </Route>
-          </Switch>
-        </Router>
-          </StyledDiv>
-        </div>
-      }
-    </>)
+            <Switch>
+              <Route path="/" exact>
+                <Introduction />
+                <StyledSpacer />
+                <HomePageRouter />
+              </Route>
+              <Route path="/socials" exact>
+                <Contact />
+              </Route>
+              <Route path="/dapps" exact>
+                <DeFi />
+              </Route>
+              <Route path="/knowledge" exact>
+                <PersonalProffiency />
+              </Route>
+              <Route path="/projects" exact>
+                <Projects />
+              </Route>
+              <Route path="/sam" exact>
+                <Me />
+              </Route>
+              <Route path="/work" exact>
+                <Work />
+              </Route>
+              <Route path="/collages" exact>
+                <Lightbox />
+              </Route>
+            </Switch>
+          </Router>
+        </StyledDiv>
+      </div>
+    }
+  </>)
 
 
 }

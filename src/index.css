@@ -38,3 +38,16 @@ body{
   background-color: #FFFFFF;
   color: #000000;
 }
+
+@keyframes floatLeft {
+  from {left: -20%;}
+  to {left: 15%;}
+}
+@keyframes floatRight {
+  from {right: -20%;}
+  to {right: 15%;}
+}
+@keyframes floatUp {
+  from {top: -20%;}
+  to {top: 30%;}
+}
