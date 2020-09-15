@@ -1,15 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 
-
 const Introduction: React.FC = () => {
-
 
   return (
     <StyledDiv>
     <Styledh1> Sam Swift <br/> Frontend Developer</Styledh1>
     <StyledSpacer/>
     <StyledNote> I have experience working professionally with <br/>React, Egret, Angular and building Dapps with Ethereum. </StyledNote>
+    <StyledNote><a href="../Resume.pdf" download></a></StyledNote>
     </StyledDiv>
   )
 }

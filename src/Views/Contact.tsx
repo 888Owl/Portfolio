@@ -7,7 +7,6 @@ import house from '../Images/house.png'
 const Contact: React.FC = () => {
     const [qrsize, setqrsize] = useState(true)
 
-
     useEffect(() => {
         if (Number(window.innerWidth) < 920) {
             setqrsize(false)

@@ -8,7 +8,7 @@ import PersonalProffiency from './Views/PersonalProffiency'
 import Projects from './Views/Projects'
 import Me from './Views/Me'
 import Work from './Views/Work'
-//other imports
+//utility imports
 import styled from 'styled-components'
 import {
   BrowserRouter as Router,
@@ -22,6 +22,7 @@ const Home: React.FC = () => {
   const [likesDark, setLikesDark] = useState(false);
 
   useEffect(() => {
+    //this is to see if a user prefers light mode or dark mode and sets the background color accordingly
     if (window.matchMedia('(prefers-color-scheme)').media !== 'not all') {
       setLikesDark(true)
     }
@@ -107,6 +108,8 @@ border-radius: 4px;
 justify-content: center;
 width: 80%;
 height: 90%;
+max-height: 90%;
+overflow-y: scroll;
 background-color: #006464;
 `
 const StyledSpacer = styled.div`
