@@ -26,6 +26,7 @@ const StyledSections1 = styled(NavLink)`
     text-decoration: none;
     font-size: 26px;
     color: unset;
+    
     @media (min-width: 900px){
         &:hover {
         background-color: palevioletred;
