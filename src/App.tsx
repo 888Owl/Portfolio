@@ -38,7 +38,7 @@ const Home: React.FC = () => {
               <StyledSpacer />
               <HomePageRouter />
             </Route>
-            <Route path="/contact" exact>
+            <Route path="/socials" exact>
               <Contact />
             </Route>
             <Route path="/dapps" exact>

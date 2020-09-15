@@ -46,6 +46,7 @@ const Me: React.FC = () => {
             <StyledP> I see its limitless potential when it comes to a fair and just society, although it is currently tightly entangled with finance and not being truly utilized.</StyledP>
             <StyledP>I am a passionate person and I have many hobbies, such as snorkeling, archery, hiking, making bad jokes that only I laugh at, reading about robotics and other new and exciting technologies, I am also open water dive certified and most importantly I love eating (我愛臭豆腐).</StyledP>
             <StyledP>I currently spend my free time on week nights trying to progress at learning backend technologies (Node.JS & MySQL for now) and studying Mandarin. During my weekends I spend time on either my hobbies or exploring more of Taiwan. </StyledP>
+            <StyledNote>I am legally able to work in Taiwan and the United States of America.</StyledNote>
         </StyledContainer>
     )
 }
@@ -89,6 +90,7 @@ height: 90%;
 background-color: #006464;
 `
 const Styledimg = styled.img`
+border-radius: 12px;
 margin-left:auto;
 margin-right:auto;
 @media (min-width: 900px){
@@ -128,6 +130,12 @@ const StyledtopP = styled.p`
 const StyledP = styled.p`
     margin-top: 25px;
     text-align: center;
+`
+const StyledNote = styled.p`
+    font-size: 20px;
+    margin-top: 25px;
+    text-align: center;
+    text-decoration: underline;
 `
 
 export default Me;

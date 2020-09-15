@@ -10,7 +10,7 @@ const HomePageRouter: React.FC = () => {
             <StyledSections3 to='/work' exact activeClassName="thirdSection" >Employment</StyledSections3>
             <StyledSections4 to='/knowledge' exact activeClassName="fourthSection" >Tools</StyledSections4>
             <StyledSections5 to='/dapps' exact activeClassName="fifthSection" >Dapps</StyledSections5>
-            <StyledSections6 to='/contact' exact activeClassName="sixthSection" >Contact</StyledSections6>
+            <StyledSections6 to='/socials' exact activeClassName="sixthSection" >Contact</StyledSections6>
         </StyledSectionsHolder>
     )
 }
