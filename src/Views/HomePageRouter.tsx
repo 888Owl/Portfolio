@@ -12,13 +12,14 @@ const HomePageRouter: React.FC = () => {
             <StyledSections5 to='/dapps' exact activeClassName="fifthSection" >Dapps</StyledSections5>
             <StyledSections6 to='/socials' exact activeClassName="sixthSection" >Contact</StyledSections6>
             <StyledSections7 to='/collages' exact activeClassName="sixthSection" >Collages</StyledSections7>
+            <StyledSections8 to='/hackathons' exact activeClassName="sixthSection" >Hackathons</StyledSections8>
         </StyledSectionsHolder>
     )
 }
 
 
 const StyledSections1 = styled(NavLink)`
-    height: 10%;
+    height: 8%;
     width: 100%;
     padding:2%;
     display: flex;
@@ -36,7 +37,7 @@ const StyledSections1 = styled(NavLink)`
     }
 `
 const StyledSections2 = styled(NavLink)`
-    height: 10%;
+    height: 8%;
     width: 100%;
     padding:2%;
     display: flex;
@@ -53,7 +54,7 @@ const StyledSections2 = styled(NavLink)`
     }
 `
 const StyledSections3 = styled(NavLink)`
-    height: 10%;
+    height: 8%;
     width: 100%;
     padding:2%;
     display: flex;
@@ -70,7 +71,7 @@ const StyledSections3 = styled(NavLink)`
     }
 `
 const StyledSections4 = styled(NavLink)`
-    height: 10%;
+    height: 8%;
     width: 100%;
     padding:2%;
     display: flex;
@@ -87,7 +88,7 @@ const StyledSections4 = styled(NavLink)`
     }
 `
 const StyledSections5 = styled(NavLink)`
-    height: 10%;
+    height: 8%;
     width: 100%;
     padding:2%;
     display: flex;
@@ -105,7 +106,7 @@ const StyledSections5 = styled(NavLink)`
 `
 
 const StyledSections6 = styled(NavLink)`
-    height: 10%;
+    height: 8%;
     width: 100%;
     padding:2%;
     display: flex;
@@ -122,7 +123,24 @@ const StyledSections6 = styled(NavLink)`
     }
 `
 const StyledSections7 = styled(NavLink)`
-    height: 10%;
+    height: 8%;
+    width: 100%;
+    padding:2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 26px;
+    color: unset;
+    @media (min-width: 900px){
+        &:hover {
+        background-color: palevioletred;
+        color: white;
+      }
+    }
+`
+const StyledSections8 = styled(NavLink)`
+    height: 8%;
     width: 100%;
     padding:2%;
     display: flex;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState} from 'react'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 
@@ -11,7 +11,32 @@ const Lightbox: React.FC = () => {
     const nameArr = ['My Time in Taiwan', 'Photography of mine', 'My Little Friends']
     const photoArr = [myTime, photography, animals]
     const altArr = ['A collage of my time in Taiwan', 'A collage of my photography and my star model', 'A collage of very cute animals that never ruined any furniture...I swear.']
+    const [currentModal, setCurrentModal] = useState(0);
+    const [currentModalimg, setCurrentModalimg] = useState(0);
 
+    const ModalClicked = function (event: any) {
+        const cur_img = event.target.id;
+        setCurrentModal(1)
+        switch (cur_img) {
+            case '1':
+                setCurrentModalimg(1)
+                break;
+            case '2':
+                setCurrentModalimg(2)
+                break;
+            case '3':
+                setCurrentModalimg(3)
+                break;
+            default:
+                setCurrentModalimg(0)
+                break;
+        }
+    }
+
+    const ModalCleared = function (event: any) {
+        setCurrentModal(0)
+        setCurrentModalimg(0)
+    }
     return (
         <>
         <StyledDiv>
@@ -21,16 +46,22 @@ const Lightbox: React.FC = () => {
         </StyledDiv>
                 <StyledGroupLeft>
                 <Styledh1>{nameArr[0]}</Styledh1>
-                <StyledPhoto alt={altArr[0]} src={photoArr[0]} />
+                <StyledPhoto onClick={ModalClicked} id="1" alt={altArr[0]} src={photoArr[0]} />
                 </StyledGroupLeft>
                 <StyledGroupCenter>
                 <Styledh1>{nameArr[1]}</Styledh1>
-                <StyledPhoto alt={altArr[1]} src={photoArr[1]} />
+                <StyledPhoto onClick={ModalClicked} id="2" alt={altArr[1]} src={photoArr[1]} />
                 </StyledGroupCenter>
                 <StyledGroupRight>
                 <Styledh1>{nameArr[2]}</Styledh1>
-                <StyledPhoto alt={altArr[2]} src={photoArr[2]} />
+                <StyledPhoto onClick={ModalClicked} id="3" alt={altArr[2]} src={photoArr[2]} />
                 </StyledGroupRight>
+                {currentModal !== 0 && <StyledBackDrop onClick={ModalCleared}>
+                {currentModalimg === 1 && <><Styledh1>{nameArr[0]}</Styledh1><StyledModalImage alt={altArr[0]} src={photoArr[0]}/></>}
+                {currentModalimg === 2 && <><Styledh1>{nameArr[1]}</Styledh1><StyledModalImage alt={altArr[1]} src={photoArr[1]}/></>}
+                {currentModalimg === 3 && <><Styledh1>{nameArr[2]}</Styledh1><StyledModalImage alt={altArr[2]} src={photoArr[2]}/></>}
+            </StyledBackDrop>
+            }
         </>
     )
 }
@@ -147,5 +178,22 @@ const StyledSectionsHolder = styled.nav`
     display: flex;
         left: 2%;
     }
+`
+const StyledBackDrop = styled.div`
+background-color: rgba(0,0,0,0.6);
+width: 100%;
+height: 100%;
+position: absolute;
+left: 0;
+top: 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+justify-items: center;
+align-content: center;
+align-items: center;
+`
+const StyledModalImage = styled.img`
+width: 48%;
 `
 export default Lightbox

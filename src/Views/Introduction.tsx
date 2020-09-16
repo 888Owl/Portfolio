@@ -7,7 +7,7 @@ const Introduction: React.FC = () => {
     <Styledh1> Sam Swift <br/> Frontend Developer</Styledh1>
     <StyledSpacer/>
     <StyledNote> I have experience working professionally with <br/>React, Egret, Angular and building Dapps with Ethereum. </StyledNote>
-    <StyledLink href="https://docs.google.com/document/d/e/2PACX-1vQLC-msXzjzZy3tbbYDFk1jb5G0D7LjDbyxuQuTUxrAoexyzaulnyQphlTy6ZeM3bSWZEJhaPVVo63p/pub" download="SamSwiftsResume">My Resume</StyledLink>
+    <StyledLink href="https://docs.google.com/document/d/e/2PACX-1vQLC-msXzjzZy3tbbYDFk1jb5G0D7LjDbyxuQuTUxrAoexyzaulnyQphlTy6ZeM3bSWZEJhaPVVo63p/pub">My Resume</StyledLink>
     </StyledDiv>
   )
 }
@@ -19,7 +19,12 @@ const StyledDiv = styled.div`
   flex-flow: column;
 `
 const Styledh1 = styled.p`
-font-size: 34px;
+@media (min-width: 900px){
+  font-size: 30px;
+  }
+  @media (max-width: 900px){
+    font-size: 24px;
+  }
 `
 const StyledNote = styled.p`
 font-size: 17px;
