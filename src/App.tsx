@@ -18,7 +18,6 @@ import {
   Switch,
 } from 'react-router-dom'
 
-
 const Home: React.FC = () => {
 
   const [likesDark, setLikesDark] = useState(false);
@@ -109,8 +108,6 @@ const Home: React.FC = () => {
           </div>
       }
     </>)
-
-
 }
 
 const StyledDiv = styled.main`

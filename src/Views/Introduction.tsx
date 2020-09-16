@@ -27,7 +27,7 @@ const Styledh1 = styled.p`
   }
 `
 const StyledNote = styled.p`
-font-size: 17px;
+font-size: 14px;
 `
 const StyledLink = styled.a`
 color: yellow;

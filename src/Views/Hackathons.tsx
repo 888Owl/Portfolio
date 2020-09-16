@@ -16,6 +16,7 @@ const Hackathons: React.FC = () => {
             {window.innerWidth > 900 &&
             <>
             <StyledHeader>Hackathons</StyledHeader>
+            <StyledHeader2>Facebook Developer Community Hackathon - San Francisco</StyledHeader2>
             <StyledRow>
             <StyledColumn>
             <StyledImage src={sffbhackathon} alt="My team during the Hackathon" />
@@ -35,6 +36,7 @@ const Hackathons: React.FC = () => {
             {window.innerWidth < 900 &&
             <>
             <StyledHeaderM>Hackathons</StyledHeaderM>
+            <StyledHeader2>Facebook Developer Community Hackathon - San Francisco</StyledHeader2>
             <StyledColumn3>
             <StyledImage src={sffbhackathon} alt="My team during the Hackathon" />
             <StyledImage src={WheresWaldo} alt="Post Hackathon photgraph of most people who attended" />
@@ -57,10 +59,13 @@ const StyledHeader = styled.h3`
 text-align: center;
 margin-bottom: 1%;
 `
+const StyledHeader2 = styled.h4`
+text-align: center;
+margin-bottom: 1%;
+`
 const StyledHeaderM = styled.h3`
 text-align: center;
 margin-bottom: 1%;
-margin-top: 170%;
 `
 const StyledRow = styled.div`
 display: flex;

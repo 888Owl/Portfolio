@@ -87,3 +87,9 @@ body{
     from {width: 150px; height: 75px;}
     to {width: 350px; height: 175px; z-index: 3;}
   }
+
+  @keyframes open {
+    /* from {background-color: #006464;} */
+    from {background-color:rgba(219,112,147, 0.0);}
+    to {background-color:rgb(219,112,147);}
+  }

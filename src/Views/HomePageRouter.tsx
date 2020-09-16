@@ -31,6 +31,8 @@ const StyledSections1 = styled(NavLink)`
     
     @media (min-width: 900px){
         &:hover {
+        animation: open;
+        animation-duration: 1s;
         background-color: palevioletred;
         color: white;
       }
@@ -48,6 +50,8 @@ const StyledSections2 = styled(NavLink)`
     color: unset;
     @media (min-width: 900px){
         &:hover {
+        animation: open;
+        animation-duration: 1s;
         background-color: palevioletred;
         color: white;
       }
@@ -65,6 +69,8 @@ const StyledSections3 = styled(NavLink)`
     color: unset;
     @media (min-width: 900px){
         &:hover {
+        animation: open;
+        animation-duration: 1s;
         background-color: palevioletred;
         color: white;
       }
@@ -82,6 +88,8 @@ const StyledSections4 = styled(NavLink)`
     color: unset;
     @media (min-width: 900px){
         &:hover {
+        animation: open;
+        animation-duration: 1s;
         background-color: palevioletred;
         color: white;
       }
@@ -99,6 +107,8 @@ const StyledSections5 = styled(NavLink)`
     color: unset;
     @media (min-width: 900px){
         &:hover {
+        animation: open;
+        animation-duration: 1s;
         background-color: palevioletred;
         color: white;
       }
@@ -117,6 +127,8 @@ const StyledSections6 = styled(NavLink)`
     color: unset;
     @media (min-width: 900px){
         &:hover {
+        animation: open;
+        animation-duration: 1s;
         background-color: palevioletred;
         color: white;
       }
@@ -134,6 +146,8 @@ const StyledSections7 = styled(NavLink)`
     color: unset;
     @media (min-width: 900px){
         &:hover {
+        animation: open;
+        animation-duration: 1s;
         background-color: palevioletred;
         color: white;
       }
@@ -151,6 +165,8 @@ const StyledSections8 = styled(NavLink)`
     color: unset;
     @media (min-width: 900px){
         &:hover {
+        animation: open;
+        animation-duration: 1s;
         background-color: palevioletred;
         color: white;
       }
@@ -160,7 +176,7 @@ const StyledSections8 = styled(NavLink)`
 const StyledSectionsHolder = styled.nav`
     color:unset;
     text-decoration: none;
-    height: 50%;
+    height: 73%;
     width: 96.2%;
     display: flex;
     flex-direction: column;

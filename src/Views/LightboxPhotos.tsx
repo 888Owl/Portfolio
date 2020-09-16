@@ -1,4 +1,4 @@
-import React, { useState} from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 
@@ -138,10 +138,14 @@ const Styledh1 = styled.p`
 @media (min-width: 900px){
     margin-top: 5%;
     font-size: 22px;
+    width:100%;
+    text-align:center;
 }
 @media (max-width: 900px){
     margin-top: 5%;
     font-size: 18px;
+    width:100%;
+    text-align:center;
 }   
 `
 const StyledPhoto = styled.img`
@@ -194,6 +198,11 @@ align-content: center;
 align-items: center;
 `
 const StyledModalImage = styled.img`
+@media (min-width: 900px){
 width: 48%;
+}
+@media (max-width: 900px){
+    width: 52%;
+    }
 `
 export default Lightbox
