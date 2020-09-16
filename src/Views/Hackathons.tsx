@@ -13,6 +13,8 @@ const Hackathons: React.FC = () => {
             <StyledSectionsHolder>
                 <StyledSections to='/' exact><img width="30px" height="30px" src={house} alt='house to show that this is a button to home' /></StyledSections>
             </StyledSectionsHolder>
+            {window.innerWidth > 900 &&
+            <>
             <StyledHeader>Hackathons</StyledHeader>
             <StyledRow>
             <StyledColumn>
@@ -28,6 +30,22 @@ const Hackathons: React.FC = () => {
             On completion we intended to write add a feature to send out notifications to encourage them to communicate and to offer topics to speak about.
             </StyledColumn2>
             </StyledRow>
+            </>
+            }
+            {window.innerWidth < 900 &&
+            <>
+            <StyledHeaderM>Hackathons</StyledHeaderM>
+            <StyledColumn3>
+            <StyledImage src={sffbhackathon} alt="My team during the Hackathon" />
+            <StyledImage src={WheresWaldo} alt="Post Hackathon photgraph of most people who attended" />
+            I attended this hackathon from November 16th - November 17th 2019.
+             My team Worked on building a Messenger bot which was intended to work as a language exchange and penpal matcher.
+             The bot was connected to a Node and Mongo backend that would take a users input and run a sorting algorithm to see if
+              there was a match for them, then it would send each party a notification with a chat link for them to connect.
+            On completion we intended to write add a feature to send out notifications to encourage them to communicate and to offer topics to speak about.
+            </StyledColumn3>
+            </>
+            }
         </StyledContainer>
     )
 }
@@ -38,6 +56,11 @@ heioght: 100%;
 const StyledHeader = styled.h3`
 text-align: center;
 margin-bottom: 1%;
+`
+const StyledHeaderM = styled.h3`
+text-align: center;
+margin-bottom: 1%;
+margin-top: 170%;
 `
 const StyledRow = styled.div`
 display: flex;
@@ -55,6 +78,12 @@ width: 45%;
 line-height: 1.3;
 margin-top: auto;
 margin-bottom: auto;
+`
+const StyledColumn3 = styled.div`
+display: flex;
+flex-direction: column;
+width: 100%;
+line-height: 1.3;
 `
 const StyledImage = styled.img`
 width: 97%;

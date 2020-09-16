@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bfc1471783429b157b1c757488faace2",
+    "revision": "e44beea447812d4b4c90e90388d8b79f",
     "url": "/index.html"
   },
   {
-    "revision": "a84a879798e9ffbeeb33",
+    "revision": "2fddd5cc3cbbe13f880c",
     "url": "/static/css/main.88cdf4a1.chunk.css"
   },
   {
-    "revision": "16d204f3cb87a6d795d2",
-    "url": "/static/js/2.d11e086d.chunk.js"
+    "revision": "2506775f9960db43ef6e",
+    "url": "/static/js/2.f5e49850.chunk.js"
   },
   {
-    "revision": "a84a879798e9ffbeeb33",
-    "url": "/static/js/main.c86eb65c.chunk.js"
+    "revision": "2fddd5cc3cbbe13f880c",
+    "url": "/static/js/main.671ca85a.chunk.js"
   },
   {
     "revision": "94dd27494e14f27a7e04",
@@ -34,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a226c2d75f93051c0a564d5ed1870a03",
     "url": "/static/media/Photography_collage.a226c2d7.png"
+  },
+  {
+    "revision": "a24dcf0a6e12220a5c4af9807e503d8e",
+    "url": "/static/media/WheresWaldo.a24dcf0a.png"
   },
   {
     "revision": "d6551a929e849dd7a65cee94886bac70",
@@ -66,6 +70,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1cf945a54ebe09fe8dc6df41468bfa25",
     "url": "/static/media/rotatingowl.1cf945a5.png"
+  },
+  {
+    "revision": "4bc6958ecb80b0f6f2a964bb6800a52a",
+    "url": "/static/media/sffbhackathon.4bc6958e.png"
   },
   {
     "revision": "91d548afb24c12338a98ed6620500985",
