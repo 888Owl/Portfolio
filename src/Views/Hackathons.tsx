@@ -27,7 +27,7 @@ const Hackathons: React.FC = () => {
              My team Worked on building a Messenger bot which was intended to work as a language exchange and penpal matcher.
              The bot was connected to a Node and Mongo backend that would take a users input and run a sorting algorithm to see if
               there was a match for them, then it would send each party a notification with a chat link for them to connect.
-            On completion we intended to write add a feature to send out notifications to encourage them to communicate and to offer topics to speak about.
+            On completion we intended to add a feature which would send out notifications to encourage paired users to communicate more and offer topics for them to speak about.
             </StyledColumn2>
             </StyledRow>
             </>
