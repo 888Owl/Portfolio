@@ -61,20 +61,29 @@ body{
 }
 
 @media (max-width: 900px){
+/* left */
   @keyframes floatLeft {
     from {margin-left: 100%;
-      margin-right: 50%;}
-    to {margin-left: 50%;
-      margin-right: 50%;}
+      margin-right: -50%;}
+    to {margin-left: 25%;
+      margin-right: 25%;}
   }
+  /* right */
   @keyframes floatRight {
-    from {margin-left: 50%;
+    from {margin-left: -50%;
       margin-right: 100%;}
-    to {margin-left: 50%;
-      margin-right: 50%;}
+    to {margin-left: 25%;
+      margin-right: 25%;}
   }
+  /* down */
   @keyframes floatUp {
     from {top: -20%;}
-    to {top: 15%;}
+    to {top: 5%;}
   }
+  }
+
+
+  @keyframes expand {
+    from {width: 150px; height: 75px;}
+    to {width: 350px; height: 175px; z-index: 3;}
   }

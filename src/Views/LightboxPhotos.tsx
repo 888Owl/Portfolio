@@ -46,13 +46,13 @@ margin-right: 100%;
 margin-left: 55%;
 }
 @media (max-width: 900px){
-    width: 256px;
+    width: 20%;
     position: absolute;
     animation: floatLeft;
     animation-duration: 2s;
     top: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 25%;
+    margin-right: 25%;
     }
 `
 // right
@@ -67,13 +67,13 @@ margin-left: 5%;
 margin-right: 100%;
 }
 @media (max-width: 900px){
-    width: 256px;
+    width: 20%;
     position: absolute;
     animation: floatRight;
     animation-duration: 2s;
-    top: 42%;
-    margin-left: auto;
-    margin-right: auto;
+    top: 35%;
+    margin-left: 25%;
+    margin-right: 25%;
     }
 `
 // down
@@ -88,13 +88,13 @@ margin-left: 30%;
 margin-right: 100%;
 }
 @media (max-width: 900px){
-    width: 256px;
+    width: 20%;
     position: absolute;
     animation: floatUp;
     animation-duration: 2s;
-    top: 15%;
-    margin-left: auto;
-    margin-right: auto;
+    top: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
     }
 `
 const StyledDiv = styled.div`
@@ -104,9 +104,14 @@ const StyledDiv = styled.div`
     justify-content: center;
 `
 const Styledh1 = styled.p`
+@media (min-width: 900px){
     margin-top: 5%;
-    margin-bottom: 0px;
     font-size: 22px;
+}
+@media (max-width: 900px){
+    margin-top: 5%;
+    font-size: 18px;
+}   
 `
 const StyledPhoto = styled.img`
 @media (min-width: 900px){
@@ -115,10 +120,6 @@ const StyledPhoto = styled.img`
 @media (max-width: 900px){
     width: 140px;
 }
-`
-const StyledSpacer = styled.div`
-height: 15px;
-width: 100%;
 `
 const StyledSections = styled(NavLink)`
     height: 10%;

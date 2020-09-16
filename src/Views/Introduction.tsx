@@ -12,17 +12,17 @@ const Introduction: React.FC = () => {
   )
 }
 const StyledDiv = styled.div`
-    position: absolute:
-    top: 5%;
-    text-align: center;
-    display: flex;
-    flex-flow: column;
+  position: absolute:
+  top: 5%;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
 `
 const Styledh1 = styled.p`
-    font-size: 34px;
+font-size: 34px;
 `
 const StyledNote = styled.p`
-    font-size: 17px;
+font-size: 17px;
 `
 const StyledLink = styled.a`
 color: yellow;
