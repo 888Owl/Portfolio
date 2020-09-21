@@ -45,6 +45,7 @@ const DeFi: React.FC = () => {
         <StyledInnerContainer>
         <StyledInnerGrouping>
         <StyledExternalLink href="https://stake.zombie.finance/">Zombie.Finance</StyledExternalLink>
+        <StyledExternalLink href="https://github.com/Zombie-Finance/zombie-protocol">Github</StyledExternalLink>
         <span>current price: {(zomPrice).toFixed(2)}</span>
         <span>24hour price change: {zomPriceChange > 0 ? `-${(zomPriceChange).toFixed(2)}` : `+${(-1*(zomPriceChange)).toFixed(2)}`}</span>
         <span>current volume: {(zomVolume).toFixed(2)}</span>
@@ -53,6 +54,7 @@ const DeFi: React.FC = () => {
         <HorizontalSpacer />
         <StyledInnerGrouping>
         <StyledExternalLink href="https://shrimp.finance/">Shrimp.Finance</StyledExternalLink>
+        <StyledExternalLink href="https://github.com/shrimp-finance/shrimp-protocol">Github</StyledExternalLink>
         <span>current price: {(shrimpPrice).toFixed(2)}</span>
         <span>24hour price change: {shrimpPriceChange > 0 ? `-${(shrimpPriceChange).toFixed(2)}` : `+${(-1*(shrimpPriceChange)).toFixed(2)}`}</span>
         <span>current volume: {(shrimpVolume).toFixed(2)}</span>
