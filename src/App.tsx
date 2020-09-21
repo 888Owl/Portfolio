@@ -10,6 +10,7 @@ import Me from './Views/Me'
 import Work from './Views/Work'
 import Lightbox from './Views/LightboxPhotos'
 import Hackathons from './Views/Hackathons'
+// import Choices from './Views/Choices'
 //utility imports
 import styled from 'styled-components'
 import {
@@ -64,6 +65,9 @@ const Home: React.FC = () => {
             <Route path="/hackathons" exact>
               <Hackathons/>
             </Route>
+            {/* <Route path="/choices" exact>
+              <Choices/>
+            </Route> */}
           </Switch>
         </Router>
           </StyledDiv>
@@ -102,6 +106,9 @@ const Home: React.FC = () => {
             <Route path="/hackathons" exact>
               <Hackathons/>
             </Route>
+            {/* <Route path="/choices" exact>
+              <Choices/>
+            </Route> */}
           </Switch>
         </Router>
           </StyledDiv>

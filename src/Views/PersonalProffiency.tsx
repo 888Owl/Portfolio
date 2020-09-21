@@ -26,69 +26,76 @@ const PersonalProffiency: React.FC = () => {
             <StyledHeader>Tools</StyledHeader>
             <StyledInnerContainer>
                 <StyledInnerGrouping>
-                <MiniHeader>Html5</MiniHeader>
-                <StyledImg src={html}/>
+                    <MiniHeader>Html5</MiniHeader>
+                    <StyledImg src={html} />
                 </StyledInnerGrouping>
                 <HorizontalSpacer />
                 <StyledInnerGrouping>
-                <MiniHeader>CSS</MiniHeader>
-                <StyledImg src={css}/>
+                    <MiniHeader>CSS</MiniHeader>
+                    <StyledImg src={css} />
                 </StyledInnerGrouping>
                 <HorizontalSpacer />
                 <StyledInnerGrouping>
-                <MiniHeader>JS</MiniHeader>
-                <StyledImg src={javascript}/>
-                </StyledInnerGrouping>
-                </StyledInnerContainer> 
-                <VerticalSpacer />
-                <StyledInnerContainer>
-                <StyledInnerGrouping>
-                <MiniHeader>TS</MiniHeader>
-                <StyledImg src={typescript}/>
-                </StyledInnerGrouping>
-                <HorizontalSpacer />
-                <StyledInnerGrouping>
-                <MiniHeader>JQuery</MiniHeader>
-                <StyledImg src={jquery}/>
-                </StyledInnerGrouping>
-                <HorizontalSpacer />
-                <StyledInnerGrouping>
-                <MiniHeader>React</MiniHeader>
-                <StyledImg src={reactpng}/>
-                </StyledInnerGrouping>
-                </StyledInnerContainer>
-                <VerticalSpacer />
-                <StyledInnerContainer>
-                <StyledInnerGrouping>
-                <MiniHeader>Bootstrap</MiniHeader>
-                <StyledImg src={bootstrap}/>
-                </StyledInnerGrouping>
-                <HorizontalSpacer />
-                <StyledInnerGrouping>
-                <MiniHeader>Angular</MiniHeader>
-                <StyledImg src={angular}/>
-                </StyledInnerGrouping>
-                <HorizontalSpacer />
-                <StyledInnerGrouping>
-                <MiniHeader>Egret</MiniHeader>
-                <StyledImg src={egret}/>
+                    <MiniHeader>JS</MiniHeader>
+                    <StyledImg src={javascript} />
                 </StyledInnerGrouping>
             </StyledInnerContainer>
             <VerticalSpacer />
-                <StyledInnerContainer>
+            <StyledInnerContainer>
                 <StyledInnerGrouping>
-                <MiniHeader>Sourcetree</MiniHeader>
-                <StyledImg src={sourcetree}/>
+                    <MiniHeader>TS</MiniHeader>
+                    <StyledImg src={typescript} />
                 </StyledInnerGrouping>
                 <HorizontalSpacer />
                 <StyledInnerGrouping>
-                <MiniHeader>GitHub</MiniHeader>
-                <StyledImg src={github}/>
+                    <MiniHeader>JQuery</MiniHeader>
+                    <StyledImg src={jquery} />
                 </StyledInnerGrouping>
                 <HorizontalSpacer />
                 <StyledInnerGrouping>
-                <MiniHeader>VSCode</MiniHeader>
-                <StyledImg src={vscode}/>
+                    <MiniHeader>React</MiniHeader>
+                    <StyledImg src={reactpng} />
+                </StyledInnerGrouping>
+            </StyledInnerContainer>
+            <VerticalSpacer />
+            <StyledInnerContainer>
+                <StyledInnerGrouping>
+                    <MiniHeader>Bootstrap</MiniHeader>
+                    <StyledImg src={bootstrap} />
+                </StyledInnerGrouping>
+                <HorizontalSpacer />
+                <StyledInnerGrouping>
+                    <MiniHeader>Angular</MiniHeader>
+                    <StyledImg src={angular} />
+                </StyledInnerGrouping>
+                <HorizontalSpacer />
+                <StyledInnerGrouping>
+                    <MiniHeader>Egret</MiniHeader>
+                    <StyledImg src={egret} />
+                </StyledInnerGrouping>
+            </StyledInnerContainer>
+            <VerticalSpacer />
+            <StyledInnerContainer>
+                <StyledInnerGrouping>
+                    <MiniHeader>Styled-Components</MiniHeader>
+                    <StyledSpan>{`< 💅🏾>`}</StyledSpan>
+                </StyledInnerGrouping>
+                <HorizontalSpacer />
+                <StyledInnerGrouping>
+                    <MiniHeader>GitHub</MiniHeader>
+                    <StyledImg src={github} />
+                </StyledInnerGrouping>
+                <HorizontalSpacer />
+                <StyledInnerGrouping>
+                    <MiniHeader>VSCode</MiniHeader>
+                    <StyledImg src={vscode} />
+                </StyledInnerGrouping>
+            </StyledInnerContainer>
+            <VerticalSpacer />
+            <StyledInnerContainer>
+                <StyledInnerGrouping>
+                    <MiniHeader>Sourcetree</MiniHeader>
+                    <StyledImg src={sourcetree} />
                 </StyledInnerGrouping>
             </StyledInnerContainer>
         </StyledContainer>
@@ -103,6 +110,14 @@ const StyledImg = styled.img`
 @media (max-width: 900px) {
     width: 60px;
     height: 60px;
+  }
+`
+const StyledSpan = styled.span`
+@media (min-width: 900px) {
+    font-size: 60px;
+  }
+@media (max-width: 900px) {
+    font-size: 30px;
   }
 `
 const StyledHeader = styled.h3`
