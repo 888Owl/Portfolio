@@ -108,6 +108,9 @@ const Projects: React.FC = () => {
                     <StyledLink href="http://163.30.45.228/login">Visit</StyledLink>
                     <StyledInfo id="8" onClick={ModalClicked}>Info</StyledInfo>
                 </StyledInnerGrouping>
+                <StyledInnerGrouping>
+                    
+                </StyledInnerGrouping>
             </StyledInnerContainer>
             {currentModal !== 0 && <StyledBackDrop onClick={ModalCleared}>
                 {currentModalText === 1 && <StyledModal>This is a freelance website I built to the specifications of the owner, I had originally built it in HTML CSS and vanilla Javascript, however I decided to rebuild it with React hooks in the event the owner ever wanted to change anything or add pages it would be a simple matter now.</StyledModal>}
