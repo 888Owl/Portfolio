@@ -13,7 +13,7 @@ const HomePageRouter: React.FC = () => {
             <StyledSections6 to='/socials' exact activeClassName="sixthSection" >Contact</StyledSections6>
             <StyledSections7 to='/collages' exact activeClassName="sixthSection" >Collages</StyledSections7>
             <StyledSections8 to='/hackathons' exact activeClassName="sixthSection" >Hackathons</StyledSections8>
-            <StyledSections9 to='/choices' exact activeClassName="sixthSection" >Choices</StyledSections9>
+            {/* <StyledSections9 to='/choices' exact activeClassName="sixthSection" >Choices</StyledSections9> */}
         </StyledSectionsHolder>
     )
 }
@@ -29,7 +29,6 @@ const StyledSections1 = styled(NavLink)`
     text-decoration: none;
     font-size: 26px;
     color: unset;
-    
     @media (min-width: 900px){
         &:hover {
         animation: open;

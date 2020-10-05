@@ -5,32 +5,10 @@ import { NavLink } from 'react-router-dom'
 import house from '../Images/house.png'
 
 const DeFi: React.FC = () => {
-    const [zomPrice, setZomPrice] = useState(0);
-    const [zomPriceChange, setZomPriceChange] = useState(0);
-    const [zomVolume, setZomPriceVolume] = useState(0);
-    const [zomVolumeChange, setZomPriceVolumeChange] = useState(0);
-    const [shrimpPrice, setShrimpPrice] = useState(0);
-    const [shrimpPriceChange, setShrimpPriceChange] = useState(0);
-    const [shrimpVolume, setShrimpPriceVolume] = useState(0);
-    const [shrimpVolumeChange, setShrimpPriceVolumeChange] = useState(0);
+    
     
     useEffect(() => {
-        axios.get('https://api.coingecko.com/api/v3/coins/zombie-finance/market_chart?vs_currency=usd&days=1').then((res) => {
-          if (res.status === 200) {
-            setZomPrice(Number(res.data.prices[75][1]))
-            setZomPriceChange(Number(res.data.prices[0][1]) - Number(res.data.prices[75][1]))
-            setZomPriceVolume(res.data.total_volumes[75][1])
-            setZomPriceVolumeChange(Number(res.data.total_volumes[0][1]) - Number(res.data.total_volumes[75][1]))
-          }
-        })
-        axios.get('https://api.coingecko.com/api/v3/coins/shrimp-finance/market_chart?vs_currency=usd&days=1').then((res) => {
-          if (res.status === 200) {
-            setShrimpPrice(Number(res.data.prices[75][1]))
-            setShrimpPriceChange(Number(res.data.prices[0][1]) - Number(res.data.prices[75][1]))
-            setShrimpPriceVolume(res.data.total_volumes[75][1])
-            setShrimpPriceVolumeChange(Number(res.data.total_volumes[0][1]) - Number(res.data.total_volumes[75][1]))
-          }
-        })
+        
       })
 
     return (
@@ -46,19 +24,15 @@ const DeFi: React.FC = () => {
         <StyledInnerGrouping>
         <StyledExternalLink href="https://stake.zombie.finance/">Zombie.Finance</StyledExternalLink>
         <StyledExternalLink href="https://github.com/Zombie-Finance/zombie-protocol">Github</StyledExternalLink>
-        <span>current price: {(zomPrice).toFixed(2)}</span>
-        <span>24hour price change: {zomPriceChange > 0 ? `-${(zomPriceChange).toFixed(2)}` : `+${(-1*(zomPriceChange)).toFixed(2)}`}</span>
-        <span>current volume: {(zomVolume).toFixed(2)}</span>
-        <span>24hour volume change: {zomVolumeChange > 0 ? `-${(zomVolumeChange).toFixed(2)}` : `+${(-1*(zomVolumeChange)).toFixed(2)}`}</span>
         </StyledInnerGrouping>
         <HorizontalSpacer />
         <StyledInnerGrouping>
         <StyledExternalLink href="https://shrimp.finance/">Shrimp.Finance</StyledExternalLink>
         <StyledExternalLink href="https://github.com/shrimp-finance/shrimp-protocol">Github</StyledExternalLink>
-        <span>current price: {(shrimpPrice).toFixed(2)}</span>
-        <span>24hour price change: {shrimpPriceChange > 0 ? `-${(shrimpPriceChange).toFixed(2)}` : `+${(-1*(shrimpPriceChange)).toFixed(2)}`}</span>
-        <span>current volume: {(shrimpVolume).toFixed(2)}</span>
-        <span>24hour volume change: {shrimpVolumeChange > 0 ? `-${(shrimpVolumeChange).toFixed(2)}` : `+${(-1*(shrimpVolumeChange)).toFixed(2)}`}</span>
+        </StyledInnerGrouping>
+        <StyledInnerGrouping>
+        <StyledExternalLink href="https://dice.finance/">Dice.Finance</StyledExternalLink>
+        <StyledExternalLink href=''>Code is not open source.</StyledExternalLink>
         </StyledInnerGrouping>
         </StyledInnerContainer>
         </StyledContainer>

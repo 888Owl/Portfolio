@@ -10,6 +10,7 @@ import movieselector from '../Images/movieselector.png'
 import randomQuote from '../Images/randomQuote.png'
 import wiki from '../Images/wiki.png'
 import rotatingowl from '../Images/rotatingowl.png'
+import schools from '../Images/schools.png'
 
 const Projects: React.FC = () => {
     const [currentModal, setCurrentModal] = useState(0);
@@ -39,6 +40,9 @@ const Projects: React.FC = () => {
                 break;
             case '7':
                 setCurrentModalText(7)
+                break;
+            case '8':
+                setCurrentModalText(8)
                 break;
             default:
                 setCurrentModalText(0)
@@ -74,7 +78,7 @@ const Projects: React.FC = () => {
                     <StyledInfo id="3" onClick={ModalClicked}>Info</StyledInfo>
                 </StyledInnerGrouping>
             </StyledInnerContainer>
-            <HorizontalSpacer/>
+            <HorizontalSpacer />
             <StyledInnerContainer>
                 <StyledInnerGrouping>
                     <StyledProjImg src={wiki} alt='Project i built to practice working with large volumes of data, in api calls.' />
@@ -92,12 +96,17 @@ const Projects: React.FC = () => {
                     <StyledInfo id="6" onClick={ModalClicked}>Info</StyledInfo>
                 </StyledInnerGrouping>
             </StyledInnerContainer>
-            <HorizontalSpacer/>
+            <HorizontalSpacer />
             <StyledInnerContainer>
                 <StyledInnerGrouping>
                     <StyledProjImg src={rotatingowl} alt='A project i built to teach my friend about the box-model and how to use animations and adding javascript.' />
                     <StyledLink href="https://codepen.io/888_owl/full/GRZvNVw">Visit</StyledLink>
                     <StyledInfo id="7" onClick={ModalClicked}>Info</StyledInfo>
+                </StyledInnerGrouping>
+                <StyledInnerGrouping>
+                    <StyledProjImg src={schools} alt='A Website i designed and built the frontend for, tracking the progress of various installations through out 115 schools. built with HTML CSS and Javascript, with a python backend.' />
+                    <StyledLink href="http://163.30.45.228/login">Visit</StyledLink>
+                    <StyledInfo id="8" onClick={ModalClicked}>Info</StyledInfo>
                 </StyledInnerGrouping>
             </StyledInnerContainer>
             {currentModal !== 0 && <StyledBackDrop onClick={ModalCleared}>
@@ -108,6 +117,7 @@ const Projects: React.FC = () => {
                 {currentModalText === 5 && <StyledModal>When I first started learning to code, I came accross this project from free code camp which is a random quote generator, it really interested me and was enjoyable to build because it reminded me of the old basic flash games I used to play. I built this with HTML, CSS, Javascript and jQuery</StyledModal>}
                 {currentModalText === 6 && <StyledModal>My wife and I always have trouble choosing what movie to cross off of her must see list, so in order to ease the proccess I decided to build this! I made this with HTML, CSS and Javscript.</StyledModal>}
                 {currentModalText === 7 && <StyledModal>This rotating owl was built so I could show my friend about the box model, basic animations and dynamic elements. I also made the owl with a pixel art program, Try clicking it to see something interesting! I made this with HTML, CSS and Javascript.</StyledModal>}
+                {currentModalText === 8 && <StyledModal>A Website i designed and built the frontend for, tracking the progress of various installations through out 115 schools. Built with HTML, CSS, Javascript and Ajax, with a Python backend.</StyledModal>}
             </StyledBackDrop>
             }
         </StyledContainer>
