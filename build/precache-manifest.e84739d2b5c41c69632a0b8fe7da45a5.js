@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0a58a6abebbb1f53e36c16f56c4322bf",
+    "revision": "ac8ba78791e0973ffa7126e1657fc48a",
     "url": "/index.html"
   },
   {
-    "revision": "bb88dea8f727467dbb05",
+    "revision": "d18b97dd107a90cd0018",
     "url": "/static/css/main.14e0fc4b.chunk.css"
   },
   {
-    "revision": "2506775f9960db43ef6e",
-    "url": "/static/js/2.f5e49850.chunk.js"
+    "revision": "5008952e462f288a56d9",
+    "url": "/static/js/2.942cdc8c.chunk.js"
   },
   {
-    "revision": "bb88dea8f727467dbb05",
-    "url": "/static/js/main.ec496e4d.chunk.js"
+    "revision": "d18b97dd107a90cd0018",
+    "url": "/static/js/main.dc60b1ac.chunk.js"
   },
   {
     "revision": "94dd27494e14f27a7e04",
@@ -70,6 +70,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1cf945a54ebe09fe8dc6df41468bfa25",
     "url": "/static/media/rotatingowl.1cf945a5.png"
+  },
+  {
+    "revision": "5db14c4ce32edbf09438fda95fee3d0f",
+    "url": "/static/media/schools.5db14c4c.png"
   },
   {
     "revision": "4bc6958ecb80b0f6f2a964bb6800a52a",
