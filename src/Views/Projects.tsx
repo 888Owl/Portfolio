@@ -130,7 +130,8 @@ const Projects: React.FC = () => {
 const HorizontalSpacer = styled.div`
 @media (min-width: 900px){
 width:100%;
-height:5%;
+height:1%;
+margin-top: 4%;
 }
 @media (max-width: 900px){
 width:100%;

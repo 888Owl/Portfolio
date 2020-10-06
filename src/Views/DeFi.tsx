@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
-// import axios from 'axios'
 import Web3 from 'web3';
 import { NavLink } from 'react-router-dom'
 import house from '../Images/house.png'
@@ -11,10 +10,7 @@ const DeFi: React.FC = () => {
 
    const  loadBlockChain = async() => {
         const web3 = new Web3(Web3.givenProvider || 'http://localhost:3000')
-        const network = await web3.eth.net.getNetworkType();
-        const currBlock = await web3.eth.getBlockNumber();
-        console.log(network) // should give you main if you're connected to the main network via metamask...
-        console.log(web3) // should give you main if you're connected to the main network via metamask...
+        const currBlock = await web3.eth.getBlockNumber()
         const accounts = await web3.eth.getAccounts()
         setCurrentHash(currBlock.toLocaleString())
         setAccount(accounts[0])
