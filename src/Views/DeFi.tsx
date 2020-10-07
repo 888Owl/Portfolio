@@ -9,7 +9,7 @@ const DeFi: React.FC = () => {
     const [currentHash, setCurrentHash] = useState('')
 
    const  loadBlockChain = async() => {
-        const web3 = new Web3(Web3.givenProvider || 'http://localhost:3000')
+        const web3 = new Web3(Web3.givenProvider || 'http://localhost:3000' || 'https://www.terminowl.com/dapps')
         const currBlock = await web3.eth.getBlockNumber()
         const accounts = await web3.eth.getAccounts()
         setCurrentHash(currBlock.toLocaleString())
