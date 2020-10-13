@@ -5,12 +5,11 @@ import HomePageRouter from './Views/HomePageRouter'
 import Contact from './Views/Contact'
 import DeFi from './Views/DeFi'
 import PersonalProffiency from './Views/PersonalProffiency'
-import Projects from './Views/Projects'
 import Me from './Views/Me'
 import Work from './Views/Work'
 import Lightbox from './Views/LightboxPhotos'
 import Hackathons from './Views/Hackathons'
-// import Choices from './Views/Choices'
+import Projects from './Views/Projects/Projects'
 //utility imports
 import styled from 'styled-components'
 import {
@@ -20,21 +19,19 @@ import {
 } from 'react-router-dom'
 
 const Home: React.FC = () => {
-
-  const [likesDark, setLikesDark] = useState(false);
+  const [likesDark, setLikesDark] = useState("body_light");
 
   useEffect(() => {
     //this is to see if a user prefers light mode or dark mode and sets the background color accordingly
     if (window.matchMedia('(prefers-color-scheme)').media !== 'not all') {
-      setLikesDark(true)
+      setLikesDark("body_dark")
     }
-  }, [setLikesDark])
+  }, [])
 
-  return (<>
-      {likesDark ?
-        <div className="body_dark">
-          <StyledDiv>
-          <Router>
+  return (
+    <div className={likesDark}>
+      <StyledDiv>
+        <Router>
           <Switch>
             <Route path="/" exact>
               <Introduction />
@@ -48,73 +45,28 @@ const Home: React.FC = () => {
               <DeFi />
             </Route>
             <Route path="/knowledge" exact>
-              <PersonalProffiency/>
+              <PersonalProffiency />
             </Route>
             <Route path="/projects" exact>
-              <Projects/>
+              <Projects />
             </Route>
             <Route path="/sam" exact>
-              <Me/>
+              <Me />
             </Route>
             <Route path="/work" exact>
-              <Work/>
+              <Work />
             </Route>
             <Route path="/collages" exact>
-              <Lightbox/>
+              <Lightbox />
             </Route>
             <Route path="/hackathons" exact>
-              <Hackathons/>
+              <Hackathons />
             </Route>
-            {/* <Route path="/choices" exact>
-              <Choices/>
-            </Route> */}
           </Switch>
         </Router>
-          </StyledDiv>
-        </div>
-        :
-        <div className="body_light">
-          <StyledDiv>
-          <Router>
-          <Switch>
-            <Route path="/" exact>
-              <Introduction />
-              <StyledSpacer />
-              <HomePageRouter />
-            </Route>
-            <Route path="/socials" exact>
-              <Contact />
-            </Route>
-            <Route path="/dapps" exact>
-              <DeFi />
-            </Route>
-            <Route path="/knowledge" exact>
-              <PersonalProffiency/>
-            </Route>
-            <Route path="/projects" exact>
-              <Projects/>
-            </Route>
-            <Route path="/sam" exact>
-              <Me/>
-            </Route>
-            <Route path="/work" exact>
-              <Work/>
-            </Route>
-            <Route path="/collages" exact>
-              <Lightbox/>
-            </Route>
-            <Route path="/hackathons" exact>
-              <Hackathons/>
-            </Route>
-            {/* <Route path="/choices" exact>
-              <Choices/>
-            </Route> */}
-          </Switch>
-        </Router>
-          </StyledDiv>
-          </div>
-      }
-    </>)
+      </StyledDiv>
+    </div>
+  )
 }
 
 const StyledDiv = styled.main`

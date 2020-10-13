@@ -8,7 +8,8 @@ const DeFi: React.FC = () => {
     const [account, setAccount] = useState('')
     const [currentHash, setCurrentHash] = useState('')
 
-   const  loadBlockChain = async() => {
+   const loadBlockChain = async () => {
+    //    console.log(window.ethereum)
         const web3 = new Web3(Web3.givenProvider || 'http://localhost:3000' || 'https://www.terminowl.com/dapps')
         const currBlock = await web3.eth.getBlockNumber()
         const accounts = await web3.eth.getAccounts()
@@ -26,9 +27,9 @@ const DeFi: React.FC = () => {
         <StyledSections to='/' exact><img width="30px" height="30px" src={house} alt='house to show that this is a button to home'/></StyledSections>
         </StyledSectionsHolder>
         <StyledHeader>Dapps</StyledHeader>
-        {account !== '' || account !== undefined ? <StyledHeader>Your Address: <StyledExternalLink href={`https://etherscan.io/address/${account}`}>{account}</StyledExternalLink></StyledHeader> : ''}
-        {account !== '' || account !== undefined ? <StyledHeader2><StyledExternalLink href='https://etherscan.io/block/0'>First Ethereum Block</StyledExternalLink> </StyledHeader2>: ''}
-        {account !== '' || account !== undefined ? <StyledHeader2><StyledExternalLink href={`https://etherscan.io/block/${currentHash}`}>Current Ethereum Block</StyledExternalLink> </StyledHeader2>: ''}
+        {account === '' || account === undefined ? <StyledHeader>Your Address: <StyledExternalLink href={`https://etherscan.io/address/${account}`}>{account}</StyledExternalLink></StyledHeader> : ''}
+        {account === '' || account === undefined ? <StyledHeader2><StyledExternalLink href='https://etherscan.io/block/0'>First Ethereum Block</StyledExternalLink> </StyledHeader2>: ''}
+        {account === '' || account === undefined ? <StyledHeader2><StyledExternalLink href={`https://etherscan.io/block/${currentHash}`}>Current Ethereum Block</StyledExternalLink> </StyledHeader2>: ''}
         <br/>
         <StyledHeader2>In order to view most of the data on these sites you will need <br/>
             to have an Ethereum compatible wallet such as <StyledExternalLink href="https://metamask.io/">MetaMask</StyledExternalLink>

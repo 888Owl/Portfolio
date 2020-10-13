@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import QRcode from 'react-qr-code';
-import { NavLink } from 'react-router-dom'
-import house from '../Images/house.png'
 
+import HomeButton from './Components/HomeButton'
+import Container from './Components/Container'
 const Contact: React.FC = () => {
     const [qrsize, setqrsize] = useState(true)
 
@@ -14,10 +14,8 @@ const Contact: React.FC = () => {
     }, [setqrsize])
 
     return (
-        <StyledContainer>
-            <StyledSectionsHolder>
-                <StyledSections to='/' exact><img width="30px" height="30px" src={house} alt='house to show that this is a button to home' /></StyledSections>
-            </StyledSectionsHolder>
+        <Container>
+            <HomeButton />
             <StyledHeader>If you can see this then you can probably already contact me however if not then here are,</StyledHeader>
             {qrsize && <StyledHeader>links and their respective QRCodes for contacting me, as well as finding me on social media.</StyledHeader>}
             {!qrsize && <StyledHeader>links for contacting me, as well as finding me on social media.</StyledHeader>}
@@ -69,7 +67,7 @@ const Contact: React.FC = () => {
                     {qrsize && <QRcode size={87} value={"https://codepen.io/888_owl"} />}
                 </StyledInnerGrouping>
             </StyledInnerContainer>
-        </StyledContainer>
+        </Container>
     )
 }
 
@@ -81,19 +79,6 @@ const HorizontalSpacer = styled.div`
 width: 25px;
 `
 
-const StyledContainer = styled.div`
-display: flex;
-flex-flow: column;
-margin-left: auto;
-margin-right: auto;
-border-radius: 4px;
-justify-content: center;
-width: 80%;
-max-height: 90%;
-overflow-y: scroll;
-height: 90%;
-background-color: #006464;
-`
 const StyledInnerContainer = styled.div`
 display: flex;
 flex-flow: row;
@@ -129,34 +114,6 @@ height: 140px;
 display: flex;
 flex-direction: column;
 align-items: center;
-`
-
-const StyledSections = styled(NavLink)`
-    height: 10%;
-    width: 10%;
-    padding:2%;
-`
-const StyledSectionsHolder = styled.nav`
-@media (min-width: 900px){
-        position: absolute;
-    color:unset;
-    text-decoration: none;
-    top: 3%;
-    height: 5%;
-    width: 5%;
-    display: flex;
-        left: 3%;
-    }
-    @media (max-width: 900px){
-        position: absolute;
-    color:unset;
-    text-decoration: none;
-    top: 3%;
-    height: 5%;
-    width: 5%;
-    display: flex;
-        left: 2%;
-    }
 `
 
 export default Contact

@@ -97,6 +97,8 @@ const PersonalProffiency: React.FC = () => {
                     <MiniHeader>Sourcetree</MiniHeader>
                     <StyledImg src={sourcetree} />
                 </StyledInnerGrouping>
+                <StyledInnerGrouping/>
+                <StyledInnerGrouping/>
             </StyledInnerContainer>
         </StyledContainer>
     )
