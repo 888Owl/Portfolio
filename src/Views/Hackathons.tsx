@@ -91,7 +91,7 @@ width: 100%;
 line-height: 1.3;
 `
 const StyledImage = styled.img`
-width: 97%;
+width: 90%;
 margin-bottom: 3%;
 `
 const StyledContainer = styled.div`
