@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { NavLink } from 'react-router-dom'
+import HomeButton from './Components/HomeButton'
 //images
-import house from '../Images/house.png'
 import css from '../Images/css3.png'
 import html from '../Images/html5.png'
 import egret from '../Images/egret.png'
@@ -20,9 +19,7 @@ const PersonalProffiency: React.FC = () => {
 
     return (
         <StyledContainer>
-            <StyledSectionsHolder>
-                <StyledSections to='/' exact><img width="30px" height="30px" src={house} alt='house to show that this is a button to home' /></StyledSections>
-            </StyledSectionsHolder>
+            <HomeButton />
             <StyledHeader>Tools</StyledHeader>
             <StyledInnerContainer>
                 <StyledInnerGrouping>
@@ -114,6 +111,7 @@ const StyledImg = styled.img`
     height: 60px;
   }
 `
+
 const StyledSpan = styled.span`
 @media (min-width: 900px) {
     font-size: 60px;
@@ -122,6 +120,7 @@ const StyledSpan = styled.span`
     font-size: 30px;
   }
 `
+
 const StyledHeader = styled.h3`
     text-align: center;
 `
@@ -129,6 +128,7 @@ const StyledHeader = styled.h3`
 const VerticalSpacer = styled.div`
 height: 5px;
 `
+
 const HorizontalSpacer = styled.div`
 width: 45px;
 `
@@ -144,6 +144,7 @@ width: 80%;
 height: 90%;
 background-color: #006464;
 `
+
 const StyledInnerContainer = styled.div`
 display: flex;
 flex-flow: row;
@@ -162,33 +163,6 @@ flex-direction: column;
 align-items: center;
 `
 
-const StyledSections = styled(NavLink)`
-    height: 10%;
-    width: 10%;
-    padding:2%;
-`
-const StyledSectionsHolder = styled.nav`
-@media (min-width: 900px){
-        position: absolute;
-    color:unset;
-    text-decoration: none;
-    top: 3%;
-    height: 15%;
-    width: 15%;
-    display: flex;
-        left: 3%;
-    }
-    @media (max-width: 900px){
-        position: absolute;
-    color:unset;
-    text-decoration: none;
-    top: 3%;
-    height: 15%;
-    width: 15%;
-    display: flex;
-        left: 2%;
-    }
-`
 const MiniHeader = styled.h4`
 text-align: center
 `

@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { NavLink } from 'react-router-dom'
+import HomeButton from './Components/HomeButton'
 
-import house from '../Images/house.png'
 import myTime from '../Images/Me_in_taiwan_collage.png'
 import photography from '../Images/Photography_collage.png'
 import animals from '../Images/Animals_collage.png'
@@ -40,9 +39,7 @@ const Lightbox: React.FC = () => {
     return (
         <>
         <StyledDiv>
-            <StyledSectionsHolder>
-                <StyledSections to='/' exact><img width="30px" height="30px" src={house} alt='House to show that this is a button to the home page' /></StyledSections>
-            </StyledSectionsHolder>
+        <HomeButton/>
         </StyledDiv>
                 <StyledGroupLeft>
                 <Styledh1>{nameArr[0]}</Styledh1>
@@ -65,6 +62,7 @@ const Lightbox: React.FC = () => {
         </>
     )
 }
+
 // left
 const StyledGroupLeft = styled.div`
 @media (min-width: 900px){
@@ -86,6 +84,7 @@ margin-left: 55%;
     margin-right: 25%;
     }
 `
+
 // right
 const StyledGroupRight = styled.div`
 @media (min-width: 900px){
@@ -107,6 +106,7 @@ margin-right: 100%;
     margin-right: 25%;
     }
 `
+
 // down
 const StyledGroupCenter = styled.div`
 @media (min-width: 900px){
@@ -128,12 +128,14 @@ margin-right: 100%;
     margin-right: 25%;
     }
 `
+
 const StyledDiv = styled.div`
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
 `
+
 const Styledh1 = styled.p`
 @media (min-width: 900px){
     margin-top: 5%;
@@ -148,6 +150,7 @@ const Styledh1 = styled.p`
     text-align:center;
 }   
 `
+
 const StyledPhoto = styled.img`
 @media (min-width: 900px){
     width: 100%;
@@ -156,33 +159,7 @@ const StyledPhoto = styled.img`
     width: 140px;
 }
 `
-const StyledSections = styled(NavLink)`
-    height: 10%;
-    width: 10%;
-    padding:2%;
-`
-const StyledSectionsHolder = styled.nav`
-@media (min-width: 900px){
-        position: absolute;
-    color:unset;
-    text-decoration: none;
-    top: 3%;
-    height: 15%;
-    width: 15%;
-    display: flex;
-        left: 3%;
-    }
-    @media (max-width: 900px){
-        position: absolute;
-    color:unset;
-    text-decoration: none;
-    top: 3%;
-    height: 15%;
-    width: 15%;
-    display: flex;
-        left: 2%;
-    }
-`
+
 const StyledBackDrop = styled.div`
 background-color: rgba(0,0,0,0.6);
 width: 100%;
@@ -197,6 +174,7 @@ justify-items: center;
 align-content: center;
 align-items: center;
 `
+
 const StyledModalImage = styled.img`
 @media (min-width: 900px){
 width: 48%;

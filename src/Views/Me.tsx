@@ -1,8 +1,6 @@
 import React, { useEffect, useState, useCallback } from 'react'
 import styled from 'styled-components'
-import { NavLink } from 'react-router-dom'
-
-import house from '../Images/house.png'
+import HomeButton from './Components/HomeButton'
 import me from '../Images/me.png'
 
 const Me: React.FC = () => {
@@ -32,9 +30,7 @@ const Me: React.FC = () => {
 
     return (
         <StyledContainer>
-            <StyledSectionsHolder>
-                <StyledSections to='/' exact><img width="30px" height="30px" src={house} alt='house to show that this is a button to home' /></StyledSections>
-            </StyledSectionsHolder>
+            <HomeButton/>
             <StyledHeader>About me</StyledHeader>
             <Styledimg src={me} alt='Sam Swift' />
             <StyledCountdownText><StyledCountdownTitle>My age: </StyledCountdownTitle>{myAge}</StyledCountdownText>
@@ -55,10 +51,12 @@ const StyledCountdownText = styled.span`
    font-size: 36px;
    font-weight: 700;
 `
+
 const StyledCountdownTitle = styled.span`
    font-size: 24px;
    font-weight: 700;
 `
+
 const StyledHeader = styled.h3`
     @media (min-width: 900px){
         margin-top: 50px;
@@ -68,12 +66,6 @@ const StyledHeader = styled.h3`
         margin-top:550px;
         text-align: center;
        }
-`
-
-const StyledSections = styled(NavLink)`
-    height: 10%;
-    width: 10%;
-    padding:2%;
 `
 
 const StyledContainer = styled.div`
@@ -89,6 +81,7 @@ overflow-y: scroll;
 height: 90%;
 background-color: #006464;
 `
+
 const Styledimg = styled.img`
 border-radius: 12px;
 margin-left:auto;
@@ -102,35 +95,16 @@ margin-right:auto;
     height:50px;
 }
 `
-const StyledSectionsHolder = styled.nav`
-@media (min-width: 900px){
-        position: absolute;
-    color:unset;
-    text-decoration: none;
-    top: 3%;
-    height: 15%;
-    width: 15%;
-    display: flex;
-        left: 3%;
-    }
-    @media (max-width: 900px){
-        position: absolute;
-    color:unset;
-    text-decoration: none;
-    top: 3%;
-    height: 15%;
-    width: 15%;
-    display: flex;
-        left: 2%;
-    }
-`
+
 const StyledtopP = styled.p`
     text-align: center;
 `
+
 const StyledP = styled.p`
     margin-top: 25px;
     text-align: center;
 `
+
 const StyledNote = styled.p`
     font-size: 20px;
     margin-top: 25px;

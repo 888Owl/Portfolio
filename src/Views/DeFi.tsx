@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import Web3 from 'web3';
-import { NavLink } from 'react-router-dom'
-import house from '../Images/house.png'
+import HomeButton from './Components/HomeButton'
+
 
 const DeFi: React.FC = () => {
     const [account, setAccount] = useState('')
@@ -23,9 +23,7 @@ const DeFi: React.FC = () => {
 
     return (
         <StyledContainer>
-        <StyledSectionsHolder>
-        <StyledSections to='/' exact><img width="30px" height="30px" src={house} alt='house to show that this is a button to home'/></StyledSections>
-        </StyledSectionsHolder>
+        <HomeButton />
         <StyledHeader>Dapps</StyledHeader>
         {account === '' || account === undefined ? <StyledHeader>Your Address: <StyledExternalLink href={`https://etherscan.io/address/${account}`}>{account}</StyledExternalLink></StyledHeader> : ''}
         {account === '' || account === undefined ? <StyledHeader2><StyledExternalLink href='https://etherscan.io/block/0'>First Ethereum Block</StyledExternalLink> </StyledHeader2>: ''}
@@ -88,37 +86,9 @@ const StyledHeader = styled.h3`
     text-align: center;
     margin-bottom: 10px;
 `
+
 const StyledHeader2 = styled.h4`
     text-align: center;
-`
-
-const StyledSections = styled(NavLink)`
-    height: 10%;
-    width: 10%;
-    padding:2%;
-`
-
-const StyledSectionsHolder = styled.nav`
-@media (min-width: 900px){
-        position: absolute;
-    color:unset;
-    text-decoration: none;
-    top: 3%;
-    height: 15%;
-    width: 15%;
-    display: flex;
-        left: 3%;
-    }
-    @media (max-width: 900px){
-        position: absolute;
-    color:unset;
-    text-decoration: none;
-    top: 3%;
-    height: 5%;
-    width: 5%;
-    display: flex;
-        left: 2%;
-    }
 `
 
 const StyledExternalLink = styled.a`

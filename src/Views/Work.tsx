@@ -1,17 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import { NavLink } from 'react-router-dom'
-
-import house from '../Images/house.png'
+import HomeButton from './Components/HomeButton'
 import First_company from '../Images/First_company.png'
 
 const Work: React.FC = () => {
 
     return (
         <StyledContainer>
-            <StyledSectionsHolder>
-                <StyledSections to='/' exact><img width="30px" height="30px" src={house} alt='house to show that this is a button to home' /></StyledSections>
-            </StyledSectionsHolder>
+            <HomeButton />
             <StyledHeader>Work</StyledHeader>
             <StyledInnerContainer>
                 <StyledInnerGrouping>
@@ -47,6 +43,7 @@ overflow-y: scroll;
 height: 90%;
 background-color: #006464;
 `
+
 const StyledInnerContainer = styled.div`
 display: flex;
 flex-flow: row;
@@ -56,6 +53,7 @@ justify-items: space-around;
 width: 100%;
 height: 45%;
 `
+
 const StyledImg = styled.img`
 @media (min-width: 900px) {
     width: 100px;
@@ -67,35 +65,9 @@ const StyledImg = styled.img`
     height: auto;
   }
 `
+
 const StyledHeader = styled.h3`
     text-align: center;
-`
-const StyledSections = styled(NavLink)`
-    height: 10%;
-    width: 10%;
-    padding:2%;
-`
-const StyledSectionsHolder = styled.nav`
-@media (min-width: 900px){
-        position: absolute;
-    color:unset;
-    text-decoration: none;
-    top: 3%;
-    height: 5%;
-    width: 5%;
-    display: flex;
-        left: 3%;
-    }
-    @media (max-width: 900px){
-        position: absolute;
-    color:unset;
-    text-decoration: none;
-    top: 3%;
-    height: 5%;
-    width: 5%;
-    display: flex;
-        left: 2%;
-    }
 `
 
 const StyledExternalLink = styled.a`
@@ -106,6 +78,7 @@ color: yellow;
     color: #006464;
 }
 `
+
 const StyledInfo = styled.span`
     line-height: 1.6;
 `
