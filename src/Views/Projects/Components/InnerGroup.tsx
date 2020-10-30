@@ -13,6 +13,12 @@ const InnerGroup: React.FC<InnerGroupProps> = (props) =>{
 
     const OpenModal = () =>{
         setOpenModal(!openModal)
+        if(!openModal){
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = null;
+        }
+        console.log(document.body.style.overflow)
     }
     return(
         <>
