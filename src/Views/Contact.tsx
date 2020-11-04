@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import QRcode from 'react-qr-code';
-
-import HomeButton from './Components/HomeButton'
+        
 import Container from './Components/Container'
 const Contact: React.FC = () => {
     const [qrsize, setqrsize] = useState(true)
@@ -15,7 +14,6 @@ const Contact: React.FC = () => {
 
     return (
         <Container>
-            <HomeButton />
             <StyledHeader>If you can see this then you can probably already contact me however if not then here are,</StyledHeader>
             {qrsize && <StyledHeader>links and their respective QRCodes for contacting me, as well as finding me on social media.</StyledHeader>}
             {!qrsize && <StyledHeader>links for contacting me, as well as finding me on social media.</StyledHeader>}

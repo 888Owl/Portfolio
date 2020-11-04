@@ -1,14 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import HomeButton from './Components/HomeButton'
+import Container from './Components/Container'
 import sffbhackathon from '../Images/sffbhackathon.png'
 import WheresWaldo from '../Images/WheresWaldo.png'
 
 const Hackathons: React.FC = () => {
 
     return (
-        <StyledContainer>
-            <HomeButton />
+        <Container>
             {window.innerWidth > 900 &&
                 <>
                     <StyledHeader>Hackathons</StyledHeader>
@@ -44,7 +43,7 @@ const Hackathons: React.FC = () => {
             </StyledColumn3>
                 </>
             }
-        </StyledContainer>
+        </Container>
     )
 }
 const Pillar = styled.div`
@@ -89,19 +88,6 @@ line-height: 1.3;
 const StyledImage = styled.img`
 width: 90%;
 margin-bottom: 3%;
-`
-const StyledContainer = styled.div`
-display: flex;
-flex-flow: column;
-margin-left: auto;
-margin-right: auto;
-border-radius: 4px;
-justify-content: center;
-width: 80%;
-max-height: 90%;
-overflow-y: scroll;
-height: 90%;
-background-color: #006464;
 `
 
 export default Hackathons;

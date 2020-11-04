@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import InnerGroup from './Components/InnerGroup'
 import Container from '../Components/Container'
-import HomeButton from '../Components/HomeButton'
 
 import jojo from '../../Images/jojo.png'
 import weather from '../../Images/weather.png'
@@ -17,7 +16,6 @@ const Projects: React.FC = () => {
 
     return (
         <Container>
-            <HomeButton />
             <StyledHeader>My personal Projects,<br />some for fun and some for utility.</StyledHeader>
             <StyledInnerContainer>
                 <InnerGroup

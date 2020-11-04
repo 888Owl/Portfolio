@@ -1,13 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import HomeButton from './Components/HomeButton'
+import Container from './Components/Container'
 import First_company from '../Images/First_company.png'
 
 const Work: React.FC = () => {
 
     return (
-        <StyledContainer>
-            <HomeButton />
+        <Container>
             <StyledHeader>Work</StyledHeader>
             <StyledInnerContainer>
                 <StyledInnerGrouping>
@@ -25,24 +24,9 @@ const Work: React.FC = () => {
                 
                 </StyledInnerGrouping>
             </StyledInnerContainer>
-        </StyledContainer>
+        </Container>
     )
 }
-
-
-const StyledContainer = styled.div`
-display: flex;
-flex-flow: column;
-margin-left: auto;
-margin-right: auto;
-border-radius: 4px;
-justify-content: center;
-width: 80%;
-max-height: 90%;
-overflow-y: scroll;
-height: 90%;
-background-color: #006464;
-`
 
 const StyledInnerContainer = styled.div`
 display: flex;

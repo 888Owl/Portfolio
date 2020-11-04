@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import Web3 from 'web3';
-import HomeButton from './Components/HomeButton'
-
+import Container from './Components/Container'
 
 const DeFi: React.FC = () => {
     const [account, setAccount] = useState('')
@@ -22,8 +21,7 @@ const DeFi: React.FC = () => {
       }, [])
 
     return (
-        <StyledContainer>
-        <HomeButton />
+        <Container>
         <StyledHeader>Dapps</StyledHeader>
         {account === '' || account === undefined ? <StyledHeader>Your Address: <StyledExternalLink href={`https://etherscan.io/address/${account}`}>{account}</StyledExternalLink></StyledHeader> : ''}
         {account === '' || account === undefined ? <StyledHeader2><StyledExternalLink href='https://etherscan.io/block/0'>First Ethereum Block</StyledExternalLink> </StyledHeader2>: ''}
@@ -47,22 +45,9 @@ const DeFi: React.FC = () => {
         <StyledExternalLink href=''>Code is not open source.</StyledExternalLink>
         </StyledInnerGrouping>
         </StyledInnerContainer>
-        </StyledContainer>
+        </Container>
     )
 }
-const StyledContainer = styled.div`
-display: flex;
-flex-flow: column;
-margin-left: auto;
-margin-right: auto;
-border-radius: 4px;
-justify-content: center;
-width: 80%;
-max-height: 90%;
-overflow-y: scroll;
-height: 90%;
-background-color: #006464;
-`
 
 const StyledInnerContainer = styled.div`
 display: flex;

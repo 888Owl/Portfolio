@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import HomeButton from './Components/HomeButton'
+import Container from './Components/Container'
 //images
 import css from '../Images/css3.png'
 import html from '../Images/html5.png'
@@ -18,8 +18,7 @@ import vscode from '../Images/vscode.png'
 const PersonalProffiency: React.FC = () => {
 
     return (
-        <StyledContainer>
-            <HomeButton />
+        <Container>
             <StyledHeader>Tools</StyledHeader>
             <StyledInnerContainer>
                 <StyledInnerGrouping>
@@ -97,7 +96,7 @@ const PersonalProffiency: React.FC = () => {
                 <StyledInnerGrouping/>
                 <StyledInnerGrouping/>
             </StyledInnerContainer>
-        </StyledContainer>
+        </Container>
     )
 }
 
@@ -131,18 +130,6 @@ height: 5px;
 
 const HorizontalSpacer = styled.div`
 width: 45px;
-`
-
-const StyledContainer = styled.div`
-display: flex;
-flex-flow: column;
-margin-left: auto;
-margin-right: auto;
-border-radius: 4px;
-justify-content: center;
-width: 80%;
-height: 90%;
-background-color: #006464;
 `
 
 const StyledInnerContainer = styled.div`
