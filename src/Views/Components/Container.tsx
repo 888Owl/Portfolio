@@ -23,7 +23,6 @@ border-radius: 4px;
 justify-content: center;
 width: 80%;
 height: 90%;
-background-color: #006464;
 `
 
 const StyledInnerContainer = styled.div`
@@ -36,8 +35,8 @@ justify-content: center;
 width: 80%;
 max-height: 90%;
 overflow-y: scroll;
+overflow-x: visible;
 height: 90%;
-background-color: #006464;
 `
 
 export default Container

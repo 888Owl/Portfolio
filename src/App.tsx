@@ -10,6 +10,7 @@ import Work from './Views/Work'
 import Lightbox from './Views/LightboxPhotos'
 import Hackathons from './Views/Hackathons'
 import Projects from './Views/Projects/Projects'
+import Resume from './Views/Resume'
 //utility imports
 import styled from 'styled-components'
 import {
@@ -61,6 +62,9 @@ const Home: React.FC = () => {
             </Route>
             <Route path="/hackathons" exact>
               <Hackathons />
+            </Route>
+            <Route path="/Resume" exact>
+              <Resume/>
             </Route>
           </Switch>
         </Router>

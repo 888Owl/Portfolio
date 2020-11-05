@@ -10,7 +10,7 @@ import movieselector from '../../Images/movieselector.png'
 import randomQuote from '../../Images/randomQuote.png'
 import wiki from '../../Images/wiki.png'
 import rotatingowl from '../../Images/rotatingowl.png'
-import schools from '../../Images/schools.png'
+// import schools from '../../Images/schools.png'
 
 const Projects: React.FC = () => {
 
@@ -77,13 +77,14 @@ const Projects: React.FC = () => {
                     Chref="https://github.com/888Owl/projectsForGithub/tree/main/rotating-owl"
                     ModalText="This rotating owl was built so I could show my friend about the box model, basic animations and dynamic elements. I also made the owl with a pixel art program, Try clicking it to see something interesting! I made this with HTML, CSS and Javascript."
                 />
-                <InnerGroup
+                {/* <InnerGroup
                     Isrc={schools}
                     Ialt='A Website i designed and built the frontend for, tracking the progress of various installations through out 115 schools. built with HTML CSS and Javascript, with a python backend.'
                     Ihref="http://163.30.45.228/login"
                     Chref="null"
                     ModalText="A Website i designed and built the frontend for, tracking the progress of various installations through out 115 schools. Built with HTML, CSS, Javascript and Ajax, with a Python backend."
-                />
+                /> */}
+                <EmptyGroup />
                 <EmptyGroup />
             </StyledInnerContainer>
         </Container>
@@ -93,7 +94,7 @@ const Projects: React.FC = () => {
 const StyledInnerContainer = styled.div`
 display: flex;
 flex-flow: row;
-margin-top: 35px;
+margin-top: 50px;
 justify-content: space-around;
 justify-items: space-around;
 width: 100%;
