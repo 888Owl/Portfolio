@@ -6,6 +6,7 @@ interface InnerGroupProps {
     Isrc: string,
     Ialt: string,
     Ihref: string,
+    Chref: string,
     ModalText: string
     }
 const InnerGroup: React.FC<InnerGroupProps> = (props) =>{
@@ -25,6 +26,7 @@ const InnerGroup: React.FC<InnerGroupProps> = (props) =>{
         <StyledInnerGrouping>
             <StyledProjImg src={props.Isrc} alt={props.Ialt} />
             <StyledLink href={props.Ihref}>Visit</StyledLink>
+            <StyledLink href={props.Chref}>{props.Chref === 'null' ? 'Private' : 'Code' }</StyledLink>
             <StyledInfo onClick={OpenModal}>Info</StyledInfo>
         </StyledInnerGrouping>
         {openModal && <Modal clicker={OpenModal} text={props.ModalText} />}
