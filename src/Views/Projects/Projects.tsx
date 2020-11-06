@@ -10,6 +10,7 @@ import movieselector from '../../Images/movieselector.png'
 import randomQuote from '../../Images/randomQuote.png'
 import wiki from '../../Images/wiki.png'
 import rotatingowl from '../../Images/rotatingowl.png'
+import draganddrop from '../../Images/dragndrop.png'
 // import schools from '../../Images/schools.png'
 
 const Projects: React.FC = () => {
@@ -84,7 +85,13 @@ const Projects: React.FC = () => {
                     Chref="null"
                     ModalText="A Website i designed and built the frontend for, tracking the progress of various installations through out 115 schools. Built with HTML, CSS, Javascript and Ajax, with a Python backend."
                 /> */}
-                <EmptyGroup />
+                <InnerGroup
+                    Isrc={draganddrop}
+                    Ialt="A project i built to learn about creating drag and drop items on a webpage, with the HTML drag and drop api and vanilla javascript."
+                    Ihref="https://codepen.io/888_owl/full/YzWOXVB"
+                    Chref="https://github.com/888Owl/projectsForGithub/tree/main/drag-and-drop"
+                    ModalText="A project i built to learn about creating drag and drop elements on a webpage, with the HTML drag and drop api and vanilla javascript."
+                />
                 <EmptyGroup />
             </StyledInnerContainer>
         </Container>
