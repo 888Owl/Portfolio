@@ -71,6 +71,7 @@ const Contact: React.FC = () => {
 
 const StyledHeader = styled.h3`
     text-align: center;
+    margin-top: 1%;
 `
 
 const HorizontalSpacer = styled.div`

@@ -1,21 +1,10 @@
-*{
-  margin:0;
-  padding:0;
-  font-family: 'Inconsolata', monospace;
-}
-@media (prefers-color-scheme: dark) {
-body{
-  background-color: #000;
-}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', serif;
 }
 
-@media (prefers-color-scheme: light) {
-  body{
-    background-color: #FFF;
-  }
-  }
-
-.body_dark{
+.body {
   font-display: optional;
   height: 100vh;
   width: 100vw;
@@ -24,72 +13,141 @@ body{
   align-items: center;
   text-align: center;
   color: #FFFFFF;
-  background-color: #000000;
 }
 
-.body_light{
-  font-display: optional;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  text-align: center;
-  background-color: #FFFFFF;
-  color: #000000;
-}
-@media (min-width: 900px){
+@media (min-width: 900px) {
   /* left */
-@keyframes floatLeft {
-  from {margin-right: -50%;
-    margin-left: 100%;}
-  to {margin-right: 100%;
-    margin-left: 55%;}
-}
-/* right */
-@keyframes floatRight {
-  from {margin-left: -50%;
-    margin-right: 100%;}
-  to {margin-left: 5%;
-    margin-right: 100%;}
-}
-/* down */
-@keyframes floatUp {
-  from {top: -20%;}
-  to {top: 30%;}
-}
-}
-
-@media (max-width: 900px){
-/* left */
   @keyframes floatLeft {
-    from {margin-left: 100%;
-      margin-right: -50%;}
-    to {margin-left: 25%;
-      margin-right: 25%;}
+    from {
+      margin-right: -50%;
+      margin-left: 100%;
+    }
+    to {
+      margin-right: 100%;
+      margin-left: 65%;
+    }
   }
   /* right */
   @keyframes floatRight {
-    from {margin-left: -50%;
-      margin-right: 100%;}
-    to {margin-left: 25%;
-      margin-right: 25%;}
+    from {
+      margin-left: -50%;
+      margin-right: 100%;
+    }
+    to {
+      margin-left: 15%;
+      margin-right: 100%;
+    }
   }
   /* down */
   @keyframes floatUp {
-    from {top: -20%;}
-    to {top: 5%;}
+    from {
+      top: -20%;
+    }
+    to {
+      top: 30%;
+    }
   }
+}
+
+@media (max-width: 900px) {
+  /* left */
+  @keyframes floatLeft {
+    from {
+      margin-left: 100%;
+      margin-right: -50%;
+    }
+    to {
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+  }
+  /* right */
+  @keyframes floatRight {
+    from {
+      margin-left: -50%;
+      margin-right: 100%;
+    }
+    to {
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+  }
+  /* down */
+  @keyframes floatUp {
+    from {
+      top: -20%;
+    }
+    to {
+      top: 5%;
+    }
+  }
+}
+
+@keyframes expand {
+  from {
+    width: 150px;
+    height: 75px;
+  }
+  to {
+    width: 350px;
+    height: 175px;
+    z-index: 3;
+  }
+}
+
+@keyframes open {
+  /* from {background-color: #006464;} */
+  from {
+    background-color: rgba(0, 0, 0, 0.0);
+    color: white;
+  }
+  to {
+    background-color: rgb(256, 256, 256);
+    color: black;
+  }
+}
+
+@keyframes shrinker {
+  from {
+    z-index: 5;
+    opacity: 1;
+  }
+  to {
+    z-index: -2;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
   }
 
-
-  @keyframes expand {
-    from {width: 150px; height: 75px;}
-    to {width: 350px; height: 175px; z-index: 3;}
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+            transform: scale3d(1.05, 1.05, 1.05);
   }
 
-  @keyframes open {
-    /* from {background-color: #006464;} */
-    from {background-color:rgba(219,112,147, 0.0);}
-    to {background-color:rgb(219,112,147);}
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
   }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+            transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}

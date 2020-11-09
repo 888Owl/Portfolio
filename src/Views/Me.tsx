@@ -1,13 +1,10 @@
 import React, { useEffect, useState, useCallback } from 'react'
 import styled from 'styled-components'
 import Container from './Components/Container'
-import me from '../Images/me.png'
 
 const Me: React.FC = () => {
     //1580896800
     const [myAge, setMyAge] = useState(String)
-    const [yearsCoding, setyearsCoding] = useState(String)
-    const [yearsBuilding, setyearsBuilding] = useState(String)
 
     const getAge = useCallback(async () => {
         const countDown = new Date("Sep 13 1994 12:18:27").getTime();
@@ -19,10 +16,8 @@ const Me: React.FC = () => {
             var distance2 = now - countDown2;
             var distance3 = now - countDown3;
             setMyAge((distance / 31557600000).toFixed(7))
-            setyearsCoding((distance2 / 31557600000).toFixed(7))
-            setyearsBuilding((distance3 / 31557600000).toFixed(7))
         }, 200);
-    }, [setMyAge,setyearsCoding,setyearsBuilding])
+    }, [setMyAge])
 
     useEffect(() => {
         getAge()
@@ -31,10 +26,7 @@ const Me: React.FC = () => {
     return (
         <Container>
             <StyledHeader>About me</StyledHeader>
-            <Styledimg src={me} alt='Sam Swift' />
             <StyledCountdownText><StyledCountdownTitle>My age: </StyledCountdownTitle>{myAge}</StyledCountdownText>
-            <StyledCountdownText><StyledCountdownTitle>Years Building Professionally: </StyledCountdownTitle>{yearsBuilding}</StyledCountdownText>
-            <StyledCountdownText><StyledCountdownTitle>Years Coding Professionally: </StyledCountdownTitle>{yearsCoding}</StyledCountdownText>
             <br/>
             <StyledtopP>As long as I can remember, I have had a passion for technology and for building, whether it was legos, houses or widgets just for me.</StyledtopP>
             <StyledP>My long term goal is to never stop learning new programming languages and find a way to use BlockChain for good.</StyledP>
@@ -67,27 +59,17 @@ const StyledHeader = styled.h3`
        }
 `
 
-const Styledimg = styled.img`
-border-radius: 12px;
-margin-left:auto;
-margin-right:auto;
-@media (min-width: 900px){
- width:150px;
- height:150px;
-}
-@media (max-width: 900px){
-    width:50px;
-    height:50px;
-}
-`
-
 const StyledtopP = styled.p`
     text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
 `
 
 const StyledP = styled.p`
     margin-top: 25px;
     text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
 `
 
 const StyledNote = styled.p`
@@ -95,6 +77,8 @@ const StyledNote = styled.p`
     margin-top: 25px;
     text-align: center;
     text-decoration: underline;
+    margin-left: 20%;
+    margin-right: 20%;
 `
 
 export default Me;

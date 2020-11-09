@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import HomeButton from './Components/HomeButton'
 
+import Container from './Components/Container'
 import myTime from '../Images/Me_in_taiwan_collage.png'
 import photography from '../Images/Photography_collage.png'
 import animals from '../Images/Animals_collage.png'
@@ -37,10 +37,7 @@ const Lightbox: React.FC = () => {
         setCurrentModalimg(0)
     }
     return (
-        <>
-        <StyledDiv>
-        <HomeButton/>
-        </StyledDiv>
+        <Container>
                 <StyledGroupLeft>
                 <Styledh1>{nameArr[0]}</Styledh1>
                 <StyledPhoto onClick={ModalClicked} id="1" alt={altArr[0]} src={photoArr[0]} />
@@ -59,7 +56,7 @@ const Lightbox: React.FC = () => {
                 {currentModalimg === 3 && <><Styledh1>{nameArr[2]}</Styledh1><StyledModalImage alt={altArr[2]} src={photoArr[2]}/></>}
             </StyledBackDrop>
             }
-        </>
+        </Container>
     )
 }
 
@@ -72,7 +69,7 @@ animation: floatLeft;
 animation-duration: 2s;
 top: 30%;
 margin-right: 100%;
-margin-left: 55%;
+margin-left: 65%;
 }
 @media (max-width: 900px){
     width: 20%;
@@ -93,7 +90,7 @@ position: absolute;
 animation: floatRight;
 animation-duration: 2s;
 top: 30%;
-margin-left: 5%;
+margin-left: 15%;
 margin-right: 100%;
 }
 @media (max-width: 900px){
@@ -115,7 +112,7 @@ position: absolute;
 animation: floatUp;
 animation-duration: 2s;
 top: 30%;
-margin-left: 30%;
+margin-left: 40%;
 margin-right: 100%;
 }
 @media (max-width: 900px){
@@ -127,13 +124,6 @@ margin-right: 100%;
     margin-left: 25%;
     margin-right: 25%;
     }
-`
-
-const StyledDiv = styled.div`
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
 `
 
 const Styledh1 = styled.p`

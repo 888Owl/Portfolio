@@ -12,7 +12,9 @@ const Work: React.FC = () => {
                 <StyledInnerGrouping>
                 <StyledImg src={First_company} alt="Iguana as an html element, the logo of Progressing Today." />
                 <span>Company Name: 微進科技有限公司</span>
+                <br/>
                 <span>Position: Frontend Engineer</span>
+                <br/>
                 <span>Duration: 2020/02/05-present</span>
                 <br/>
                 <StyledInfo>During my time at 微進科技有限公司(Progressing.Today), I used the <StyledExternalLink href="https://www.egret.com/">Egret Game Engine</StyledExternalLink>, Egret uses Typescript and EXML(a subset of XML which is  unique to Egret) to build the visuals and interactivity of the games.<br/> I maintained one game and built two more which used cryptographic hashes to verify the accuracy of each action taken by the user. These games were built based off of a designers specifications.<br/>
@@ -52,6 +54,7 @@ const StyledImg = styled.img`
 
 const StyledHeader = styled.h3`
     text-align: center;
+    margin-top: 1%;
 `
 
 const StyledExternalLink = styled.a`
@@ -64,7 +67,11 @@ color: yellow;
 `
 
 const StyledInfo = styled.span`
-    line-height: 1.6;
+    line-height: 1.7;
+    margin-right: 18%;
+    margin-left:18%;
+    font-size: 1.2em;
+    margin-bottom: 1%;
 `
 
 const StyledInnerGrouping = styled.div`

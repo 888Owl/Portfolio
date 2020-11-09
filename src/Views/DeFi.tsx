@@ -68,6 +68,7 @@ align-items: center;
 
 const StyledHeader = styled.h3`
     text-align: center;
+    margin-top: 10px;
     margin-bottom: 10px;
 `
 

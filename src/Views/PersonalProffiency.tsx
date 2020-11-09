@@ -32,6 +32,11 @@ const PersonalProffiency: React.FC = () => {
                 </StyledInnerGrouping>
                 <HorizontalSpacer />
                 <StyledInnerGrouping>
+                    <MiniHeader>TS</MiniHeader>
+                    <StyledImg src={typescript} />
+                </StyledInnerGrouping>
+                <HorizontalSpacer />
+                <StyledInnerGrouping>
                     <MiniHeader>JS</MiniHeader>
                     <StyledImg src={javascript} />
                 </StyledInnerGrouping>
@@ -39,22 +44,10 @@ const PersonalProffiency: React.FC = () => {
             <VerticalSpacer />
             <StyledInnerContainer>
                 <StyledInnerGrouping>
-                    <MiniHeader>TS</MiniHeader>
-                    <StyledImg src={typescript} />
-                </StyledInnerGrouping>
-                <HorizontalSpacer />
-                <StyledInnerGrouping>
                     <MiniHeader>JQuery</MiniHeader>
                     <StyledImg src={jquery} />
                 </StyledInnerGrouping>
                 <HorizontalSpacer />
-                <StyledInnerGrouping>
-                    <MiniHeader>React</MiniHeader>
-                    <StyledImg src={reactpng} />
-                </StyledInnerGrouping>
-            </StyledInnerContainer>
-            <VerticalSpacer />
-            <StyledInnerContainer>
                 <StyledInnerGrouping>
                     <MiniHeader>Bootstrap</MiniHeader>
                     <StyledImg src={bootstrap} />
@@ -66,13 +59,13 @@ const PersonalProffiency: React.FC = () => {
                 </StyledInnerGrouping>
                 <HorizontalSpacer />
                 <StyledInnerGrouping>
-                    <MiniHeader>Egret</MiniHeader>
-                    <StyledImg src={egret} />
+                    <MiniHeader>React</MiniHeader>
+                    <StyledImg src={reactpng} />
                 </StyledInnerGrouping>
             </StyledInnerContainer>
             <VerticalSpacer />
             <StyledInnerContainer>
-                <StyledInnerGrouping>
+            <StyledInnerGrouping>
                     <MiniHeader>Styled-Components</MiniHeader>
                     <StyledSpan>{`< 💅🏾>`}</StyledSpan>
                 </StyledInnerGrouping>
@@ -86,6 +79,11 @@ const PersonalProffiency: React.FC = () => {
                     <MiniHeader>VSCode</MiniHeader>
                     <StyledImg src={vscode} />
                 </StyledInnerGrouping>
+                <HorizontalSpacer />
+                <StyledInnerGrouping>
+                    <MiniHeader>Egret</MiniHeader>
+                    <StyledImg src={egret} />
+                </StyledInnerGrouping>
             </StyledInnerContainer>
             <VerticalSpacer />
             <StyledInnerContainer>
@@ -93,6 +91,7 @@ const PersonalProffiency: React.FC = () => {
                     <MiniHeader>Sourcetree</MiniHeader>
                     <StyledImg src={sourcetree} />
                 </StyledInnerGrouping>
+                <StyledInnerGrouping/>
                 <StyledInnerGrouping/>
                 <StyledInnerGrouping/>
             </StyledInnerContainer>

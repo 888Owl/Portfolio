@@ -47,7 +47,7 @@ const Hackathons: React.FC = () => {
     )
 }
 const Pillar = styled.div`
-width: 10%;
+width: 4%;
 heioght: 100%;
 `
 const StyledHeader = styled.h3`
@@ -57,6 +57,7 @@ margin-bottom: 1%;
 const StyledHeader2 = styled.h4`
 text-align: center;
 margin-bottom: 1%;
+
 `
 const StyledHeaderM = styled.h3`
 text-align: center;
@@ -70,6 +71,7 @@ const StyledColumn = styled.div`
 display: flex;
 flex-direction: column;
 width: 45%;
+margin-left: 10%;
 `
 const StyledColumn2 = styled.div`
 display: flex;
@@ -78,6 +80,7 @@ width: 45%;
 line-height: 1.3;
 margin-top: auto;
 margin-bottom: auto;
+margin-right: 15%;
 `
 const StyledColumn3 = styled.div`
 display: flex;

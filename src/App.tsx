@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 //component imports
-import Introduction from './Views/Introduction'
+import HomePage from './Views/HomePage'
 import HomePageRouter from './Views/HomePageRouter'
 import Contact from './Views/Contact'
 import DeFi from './Views/DeFi'
@@ -12,7 +12,6 @@ import Hackathons from './Views/Hackathons'
 import Projects from './Views/Projects/Projects'
 import Resume from './Views/Resume'
 //utility imports
-import styled from 'styled-components'
 import {
   BrowserRouter as Router,
   Route,
@@ -20,75 +19,46 @@ import {
 } from 'react-router-dom'
 
 const Home: React.FC = () => {
-  const [likesDark, setLikesDark] = useState("body_light");
 
-  useEffect(() => {
-    //this is to see if a user prefers light mode or dark mode and sets the background color accordingly
-    if (window.matchMedia('(prefers-color-scheme)').media !== 'not all') {
-      setLikesDark("body_dark")
-    }
-  }, [])
 
   return (
-    <div className={likesDark}>
-      <StyledDiv>
-        <Router>
-          <Switch>
-            <Route path="/" exact>
-              <Introduction />
-              <StyledSpacer />
+      <Router>
+        <Switch>
+          <Route path="/" exact>
+            <HomePage>
               <HomePageRouter />
-            </Route>
-            <Route path="/socials" exact>
-              <Contact />
-            </Route>
-            <Route path="/dapps" exact>
-              <DeFi />
-            </Route>
-            <Route path="/knowledge" exact>
-              <PersonalProffiency />
-            </Route>
-            <Route path="/projects" exact>
-              <Projects />
-            </Route>
-            <Route path="/sam" exact>
-              <Me />
-            </Route>
-            <Route path="/work" exact>
-              <Work />
-            </Route>
-            <Route path="/collages" exact>
-              <Lightbox />
-            </Route>
-            <Route path="/hackathons" exact>
-              <Hackathons />
-            </Route>
-            <Route path="/Resume" exact>
-              <Resume/>
-            </Route>
-          </Switch>
-        </Router>
-      </StyledDiv>
-    </div>
+            </HomePage>
+          </Route>
+          <Route path="/socials" exact>
+            <Contact />
+          </Route>
+          <Route path="/dapps" exact>
+            <DeFi />
+          </Route>
+          <Route path="/knowledge" exact>
+            <PersonalProffiency />
+          </Route>
+          <Route path="/projects" exact>
+            <Projects />
+          </Route>
+          <Route path="/sam" exact>
+            <Me />
+          </Route>
+          <Route path="/work" exact>
+            <Work />
+          </Route>
+          <Route path="/collages" exact>
+            <Lightbox />
+          </Route>
+          <Route path="/hackathons" exact>
+            <Hackathons />
+          </Route>
+          <Route path="/Resume" exact>
+            <Resume />
+          </Route>
+        </Switch>
+      </Router>
   )
 }
-
-const StyledDiv = styled.main`
-display: flex;
-flex-flow: column;
-margin-left: auto;
-margin-right: auto;
-border-radius: 4px;
-justify-content: center;
-width: 80%;
-height: 90%;
-max-height: 90%;
-overflow-y: scroll;
-background-color: #006464;
-`
-const StyledSpacer = styled.div`
-height: 15px;
-width: 100%;
-`
 
 export default Home

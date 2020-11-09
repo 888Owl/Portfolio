@@ -5,9 +5,9 @@ import { NavLink } from 'react-router-dom'
 interface RouterProps {
     to: string,
     text: string,
-    }
+}
 
-const RouterLink: React.FC<RouterProps> = (props) =>{
+const RouterLink: React.FC<RouterProps> = (props) => {
 
     return (
         <StyledSections to={props.to} exact>{props.text}</StyledSections>
@@ -15,6 +15,8 @@ const RouterLink: React.FC<RouterProps> = (props) =>{
 }
 
 const StyledSections = styled(NavLink)`
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
     height: 8%;
     width: 100%;
     padding:2%;
@@ -28,8 +30,8 @@ const StyledSections = styled(NavLink)`
         &:hover {
         animation: open;
         animation-duration: 1s;
-        background-color: palevioletred;
-        color: white;
+        background-color: rgb(256, 256, 256);
+        color: black;
       }
     }
 `
