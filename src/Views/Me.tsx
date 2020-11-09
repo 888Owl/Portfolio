@@ -8,13 +8,9 @@ const Me: React.FC = () => {
 
     const getAge = useCallback(async () => {
         const countDown = new Date("Sep 13 1994 12:18:27").getTime();
-        const countDown2 = new Date("Feb 05 2020 10:00:00").getTime();
-        const countDown3 = new Date("Nov 14 2013 08:00:00").getTime();
         setInterval(function () {
             var now = new Date().getTime();
             var distance = now - countDown;
-            var distance2 = now - countDown2;
-            var distance3 = now - countDown3;
             setMyAge((distance / 31557600000).toFixed(7))
         }, 200);
     }, [setMyAge])
