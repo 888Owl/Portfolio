@@ -11,7 +11,8 @@ import randomQuote from '../../Images/randomQuote.png'
 import wiki from '../../Images/wiki.png'
 import rotatingowl from '../../Images/rotatingowl.png'
 import draganddrop from '../../Images/dragndrop.png'
-// import schools from '../../Images/schools.png'
+import cryptoCompare from '../../Images/cryptoCompare.png'
+
 
 const Projects: React.FC = () => {
 
@@ -78,13 +79,13 @@ const Projects: React.FC = () => {
                     Chref="https://github.com/888Owl/projectsForGithub/tree/main/rotating-owl"
                     ModalText="This rotating owl was built so I could show my friend about the box model, basic animations and dynamic elements. I also made the owl with a pixel art program, Try clicking it to see something interesting! I made this with HTML, CSS and Javascript."
                 />
-                {/* <InnerGroup
-                    Isrc={schools}
-                    Ialt='A Website i designed and built the frontend for, tracking the progress of various installations through out 115 schools. built with HTML CSS and Javascript, with a python backend.'
-                    Ihref="http://163.30.45.228/login"
+                <InnerGroup
+                    Isrc={cryptoCompare}
+                    Ialt='A Web app I built to practice some things with Vue. Such as conditional rendering, api calls and returning data values.'
+                    Ihref="https://eloquent-hypatia-5ea52f.netlify.app/"
                     Chref="null"
-                    ModalText="A Website i designed and built the frontend for, tracking the progress of various installations through out 115 schools. Built with HTML, CSS, Javascript and Ajax, with a Python backend."
-                /> */}
+                    ModalText="A Web app I built to practice some things with Vue. Such as conditional rendering, api calls with fetch and serving data to 3rd party libraries, in this case it was chartjs for Vue."
+                />
                 <InnerGroup
                     Isrc={draganddrop}
                     Ialt="A project i built to learn about creating drag and drop items on a webpage, with the HTML drag and drop api and vanilla javascript."
@@ -92,7 +93,6 @@ const Projects: React.FC = () => {
                     Chref="https://github.com/888Owl/projectsForGithub/tree/main/drag-and-drop"
                     ModalText="A project i built to learn about creating drag and drop elements on a webpage, with the HTML drag and drop api and vanilla javascript."
                 />
-                <EmptyGroup />
             </StyledInnerContainer>
         </Container>
     )
