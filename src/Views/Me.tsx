@@ -59,6 +59,8 @@ const StyledtopP = styled.p`
     text-align: center;
     margin-left: 20%;
     margin-right: 20%;
+    font-weight: 200;
+    line-height: 1.3em;
 `
 
 const StyledP = styled.p`
@@ -66,6 +68,8 @@ const StyledP = styled.p`
     text-align: center;
     margin-left: 20%;
     margin-right: 20%;
+    font-weight: 200;
+    line-height: 1.3em;
 `
 
 const StyledNote = styled.p`
@@ -75,6 +79,8 @@ const StyledNote = styled.p`
     text-decoration: underline;
     margin-left: 20%;
     margin-right: 20%;
+    font-weight: 200;
+    line-height: 1.3em;
 `
 
 export default Me;

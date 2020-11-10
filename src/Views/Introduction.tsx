@@ -24,7 +24,7 @@ const StyledDiv = styled.div`
 
 const Styledh1 = styled.p`
 font-family: 'Roboto', sans-serif;
-font-weight: 700;
+font-weight: 500;
 letter-spacing: 2px;
 text-shadow: 2px 2px black;
 @media (min-width: 900px){
@@ -37,6 +37,7 @@ text-shadow: 2px 2px black;
 
 const StyledNote = styled.p`
 font-size: 22px;
+font-weight: 200;
 `
 
 const StyledLink = styled(NavLink)`

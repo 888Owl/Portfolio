@@ -83,7 +83,7 @@ const Projects: React.FC = () => {
                     Isrc={cryptoCompare}
                     Ialt='A Web app I built to practice some things with Vue. Such as conditional rendering, api calls and returning data values.'
                     Ihref="https://eloquent-hypatia-5ea52f.netlify.app/"
-                    Chref="null"
+                    Chref="https://github.com/888Owl/projectsForGithub/tree/main/crypto-compare"
                     ModalText="A Web app I built to practice some things with Vue. Such as conditional rendering, api calls with fetch and serving data to 3rd party libraries, in this case it was chartjs for Vue."
                 />
                 <InnerGroup
