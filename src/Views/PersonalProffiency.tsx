@@ -14,12 +14,13 @@ import typescript from '../Images/typescript.png'
 import sourcetree from '../Images/sourcetree.png'
 import github from '../Images/github.png'
 import vscode from '../Images/vscode.png'
+import vue from '../Images/vue.png'
 //images^^^
 const PersonalProffiency: React.FC = () => {
 
     return (
         <Container>
-            <StyledHeader>Tools</StyledHeader>
+            <StyledHeader>Skills</StyledHeader>
             <StyledInnerContainer>
                 <StyledInnerGrouping>
                     <MiniHeader>Html5</MiniHeader>
@@ -91,7 +92,10 @@ const PersonalProffiency: React.FC = () => {
                     <MiniHeader>Sourcetree</MiniHeader>
                     <StyledImg src={sourcetree} />
                 </StyledInnerGrouping>
-                <StyledInnerGrouping/>
+                <StyledInnerGrouping>
+                    <MiniHeader>Vue</MiniHeader>
+                    <StyledImg src={vue} />
+                </StyledInnerGrouping>
                 <StyledInnerGrouping/>
                 <StyledInnerGrouping/>
             </StyledInnerContainer>

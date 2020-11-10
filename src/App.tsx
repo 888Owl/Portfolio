@@ -35,7 +35,7 @@ const Home: React.FC = () => {
           <Route path="/dapps" exact>
             <DeFi />
           </Route>
-          <Route path="/knowledge" exact>
+          <Route path="/Skills" exact>
             <PersonalProffiency />
           </Route>
           <Route path="/projects" exact>

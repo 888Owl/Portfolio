@@ -108,13 +108,13 @@ width: 100%;
 height: 15%;
 `
 
-const EmptyGroup = styled.div`
-width: 33%;
-height: 100px;
-display: flex;
-flex-direction: column;
-align-items: center;
-`
+// const EmptyGroup = styled.div`
+// width: 33%;
+// height: 100px;
+// display: flex;
+// flex-direction: column;
+// align-items: center;
+// `
 
 const StyledHeader = styled.h3`
 text-align: center;

@@ -35,10 +35,11 @@ const HomePageRouter: React.FC = () => {
             <RouterLink to='/projects' text="Projects" />
             <RouterLink to='/work' text="Employment" />
             <RouterLink to='/dapps' text="Dapps" />
-            <RouterLink to='/knowledge' text="Tools" />
+            <RouterLink to='/Skills' text="Skills" />
             <RouterLink to='/hackathons' text="Hackathons" />
             </Shown>
             <RouterLink to='/collages' text="Collages" />
+            <RouterLink to='/resume' text="Resume" />
             <RouterLink to='/socials' text="Contact" />
         </StyledSectionsHolder>
     )
