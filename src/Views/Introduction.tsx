@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import { NavLink } from 'react-router-dom'
+
 const Introduction: React.FC = () => {
 
   return (
@@ -7,7 +9,7 @@ const Introduction: React.FC = () => {
       <Styledh1> Sam Swift <br /> Frontend Developer</Styledh1>
       <StyledSpacer />
       <StyledNote> I have experience working professionally with <br />React, Egret, Angular and building Dapps with Ethereum. </StyledNote>
-      <StyledLink href="https://docs.google.com/document/d/e/2PACX-1vQLC-msXzjzZy3tbbYDFk1jb5G0D7LjDbyxuQuTUxrAoexyzaulnyQphlTy6ZeM3bSWZEJhaPVVo63p/pub">My Resume</StyledLink>
+      <StyledLink to='/resume'>My Resume</StyledLink>
     </StyledDiv>
   )
 }
@@ -37,7 +39,7 @@ const StyledNote = styled.p`
 font-size: 22px;
 `
 
-const StyledLink = styled.a`
+const StyledLink = styled(NavLink)`
 color: yellow;
 font-size: 19px;
 text-align: center;
