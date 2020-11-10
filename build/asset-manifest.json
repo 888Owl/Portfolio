@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.f341250c.chunk.css",
-    "main.js": "/static/js/main.67e8a2e1.chunk.js",
-    "main.js.map": "/static/js/main.67e8a2e1.chunk.js.map",
+    "main.js": "/static/js/main.653dd7d7.chunk.js",
+    "main.js.map": "/static/js/main.653dd7d7.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.86e01a7f.js",
     "runtime~main.js.map": "/static/js/runtime~main.86e01a7f.js.map",
     "static/js/2.45286036.chunk.js": "/static/js/2.45286036.chunk.js",
     "static/js/2.45286036.chunk.js.map": "/static/js/2.45286036.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.86fe1de2e6d14a83d0c312b18bc2a70b.js": "/precache-manifest.86fe1de2e6d14a83d0c312b18bc2a70b.js",
+    "precache-manifest.e7be43c6090eaf0312007745f3180fc3.js": "/precache-manifest.e7be43c6090eaf0312007745f3180fc3.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.f341250c.chunk.css.map": "/static/css/main.f341250c.chunk.css.map",
     "static/media/Animals_collage.png": "/static/media/Animals_collage.218b463b.png",
@@ -32,6 +32,6 @@
     "static/media/sourcetree.png": "/static/media/sourcetree.91d548af.png",
     "static/media/vscode.png": "/static/media/vscode.bb4b6864.png",
     "static/media/weather.png": "/static/media/weather.317d3a73.png",
-    "static/media/wiki.png": "/static/media/wiki.92c903d5.png"
+    "static/media/wiki.png": "/static/media/wiki.0b121506.png"
   }
 }
