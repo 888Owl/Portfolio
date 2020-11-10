@@ -24,44 +24,44 @@ const PersonalProffiency: React.FC = () => {
             <StyledInnerContainer>
                 <StyledInnerGrouping>
                     <MiniHeader>Html5</MiniHeader>
-                    <StyledImg src={html} />
+                    <StyledImg loading="lazy" src={html} />
                 </StyledInnerGrouping>
                 <HorizontalSpacer />
                 <StyledInnerGrouping>
                     <MiniHeader>CSS</MiniHeader>
-                    <StyledImg src={css} />
+                    <StyledImg loading="lazy" src={css} />
                 </StyledInnerGrouping>
                 <HorizontalSpacer />
                 <StyledInnerGrouping>
                     <MiniHeader>TS</MiniHeader>
-                    <StyledImg src={typescript} />
+                    <StyledImg loading="lazy" src={typescript} />
                 </StyledInnerGrouping>
                 <HorizontalSpacer />
                 <StyledInnerGrouping>
                     <MiniHeader>JS</MiniHeader>
-                    <StyledImg src={javascript} />
+                    <StyledImg loading="lazy" src={javascript} />
                 </StyledInnerGrouping>
             </StyledInnerContainer>
             <VerticalSpacer />
             <StyledInnerContainer>
                 <StyledInnerGrouping>
                     <MiniHeader>JQuery</MiniHeader>
-                    <StyledImg src={jquery} />
+                    <StyledImg loading="lazy" src={jquery} />
                 </StyledInnerGrouping>
                 <HorizontalSpacer />
                 <StyledInnerGrouping>
                     <MiniHeader>Bootstrap</MiniHeader>
-                    <StyledImg src={bootstrap} />
+                    <StyledImg loading="lazy" src={bootstrap} />
                 </StyledInnerGrouping>
                 <HorizontalSpacer />
                 <StyledInnerGrouping>
                     <MiniHeader>Angular</MiniHeader>
-                    <StyledImg src={angular} />
+                    <StyledImg loading="lazy" src={angular} />
                 </StyledInnerGrouping>
                 <HorizontalSpacer />
                 <StyledInnerGrouping>
                     <MiniHeader>React</MiniHeader>
-                    <StyledImg src={reactpng} />
+                    <StyledImg loading="lazy" src={reactpng} />
                 </StyledInnerGrouping>
             </StyledInnerContainer>
             <VerticalSpacer />
@@ -73,28 +73,28 @@ const PersonalProffiency: React.FC = () => {
                 <HorizontalSpacer />
                 <StyledInnerGrouping>
                     <MiniHeader>GitHub</MiniHeader>
-                    <StyledImg src={github} />
+                    <StyledImg loading="lazy" src={github} />
                 </StyledInnerGrouping>
                 <HorizontalSpacer />
                 <StyledInnerGrouping>
                     <MiniHeader>VSCode</MiniHeader>
-                    <StyledImg src={vscode} />
+                    <StyledImg loading="lazy" src={vscode} />
                 </StyledInnerGrouping>
                 <HorizontalSpacer />
                 <StyledInnerGrouping>
                     <MiniHeader>Egret</MiniHeader>
-                    <StyledImg src={egret} />
+                    <StyledImg loading="lazy" src={egret} />
                 </StyledInnerGrouping>
             </StyledInnerContainer>
             <VerticalSpacer />
             <StyledInnerContainer>
                 <StyledInnerGrouping>
                     <MiniHeader>Sourcetree</MiniHeader>
-                    <StyledImg src={sourcetree} />
+                    <StyledImg loading="lazy" src={sourcetree} />
                 </StyledInnerGrouping>
                 <StyledInnerGrouping>
                     <MiniHeader>Vue</MiniHeader>
-                    <StyledImg src={vue} />
+                    <StyledImg loading="lazy" src={vue} />
                 </StyledInnerGrouping>
                 <StyledInnerGrouping/>
                 <StyledInnerGrouping/>

@@ -47,9 +47,14 @@ overflow-y: scroll;
 const Shadow = styled.div`
 display: flex;
 flex-direction: column;
-height: 200%;
 width: 100%;
 background-color: rgba(0,0,0,0.6)
+@media (min-width: 900px){
+height: 100%;
+}
+@media (max-width: 900px){
+    height: 200vh;
+}
 `
 
 const HB = styled.button`

@@ -24,7 +24,7 @@ const InnerGroup: React.FC<InnerGroupProps> = (props) =>{
     return(
         <>
         <StyledInnerGrouping>
-            <StyledProjImg src={props.Isrc} alt={props.Ialt} />
+            <StyledProjImg loading="lazy" src={props.Isrc} alt={props.Ialt} />
             <StyledLink href={props.Ihref}>Visit</StyledLink>
             <StyledLink href={props.Chref}>{props.Chref === 'null' ? 'Private' : 'Code' }</StyledLink>
             <StyledInfo onClick={OpenModal}>Info</StyledInfo>
@@ -46,8 +46,6 @@ const StyledProjImg = styled.img`
 width: 150px;
 height: 75px;
 &:hover {
-    animation: expand;
-    animation-duration: 1s;
     width: 350px; 
     height: 175px; 
     z-index: 3;

@@ -84,12 +84,17 @@ cursor: pointer;
 const Side = styled.div`
 display: flex;
 flex-direction: column;
-width: 30vw;
 height: 100vh;
 position: absolute;
 right: 0;
 top: 0;
 background-color: rgba(0,0,13, 0.6);
+@media (min-width: 900px){
+        width: 30vw;
+   }
+   @media (max-width: 900px){
+        width: 100vw;
+   }
 `
 
 export default HomePage

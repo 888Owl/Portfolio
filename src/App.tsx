@@ -7,7 +7,7 @@ import DeFi from './Views/DeFi'
 import PersonalProffiency from './Views/PersonalProffiency'
 import Me from './Views/Me'
 import Work from './Views/Work'
-import Lightbox from './Views/LightboxPhotos'
+// import Lightbox from './Views/LightboxPhotos'
 import Hackathons from './Views/Hackathons'
 import Projects from './Views/Projects/Projects'
 import Resume from './Views/Resume'
@@ -47,9 +47,9 @@ const Home: React.FC = () => {
           <Route path="/work" exact>
             <Work />
           </Route>
-          <Route path="/collages" exact>
+          {/* <Route path="/collages" exact>
             <Lightbox />
-          </Route>
+          </Route> */}
           <Route path="/hackathons" exact>
             <Hackathons />
           </Route>
