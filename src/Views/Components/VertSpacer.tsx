@@ -10,7 +10,7 @@ const VertSpacer: React.FC = () => {
 
 const Spacer = styled.div`
 width: 100%;
-height: 3%;
+height: 30px
 `
 
 export default VertSpacer

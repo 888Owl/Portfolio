@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import QRcode from 'react-qr-code';
-        
+
 import Container from './Components/Container'
 const Contact: React.FC = () => {
     const [qrsize, setqrsize] = useState(true)
@@ -32,6 +32,8 @@ const Contact: React.FC = () => {
                     <StyledLink target='_self' href="https://wa.me/886975139873">WhatsApp</StyledLink>
                     {qrsize && <QRcode size={87} value={"https://wa.me/886975139873"} />}
                 </StyledInnerGrouping>
+                <HorizontalSpacer />
+
             </StyledInnerContainer>
             <StyledInnerContainer>
                 <StyledInnerGrouping>
@@ -48,6 +50,8 @@ const Contact: React.FC = () => {
                     <StyledLink target='_self' href="https://www.facebook.com/samson.swift.1">Facebook</StyledLink>
                     {qrsize && <QRcode size={87} value={"https://www.facebook.com/samson.swift.1"} />}
                 </StyledInnerGrouping>
+                <HorizontalSpacer />
+
             </StyledInnerContainer>
             <StyledInnerContainer>
                 <StyledInnerGrouping>
@@ -64,6 +68,8 @@ const Contact: React.FC = () => {
                     <StyledLink target='_self' href="hhttps://codepen.io/888_owl">Codepen</StyledLink>
                     {qrsize && <QRcode size={87} value={"https://codepen.io/888_owl"} />}
                 </StyledInnerGrouping>
+                <HorizontalSpacer />
+
             </StyledInnerContainer>
         </Container>
     )
@@ -82,17 +88,16 @@ const StyledInnerContainer = styled.div`
 display: flex;
 flex-flow: row;
 margin-top: 40px;
-justify-content: space-around;
-justify-items: space-around;
+justify-content: space-evenly;
 width: 100%;
 height: 15%;
 `
 const StyledLink = styled.a`
 font-weight: 900;
-@media (min-width: 900px){
 text-decoration: none;
 color: yellow;
 border-radius: 8px;
+@media (min-width: 900px){
 width: 83px;
 &:hover {
     background-color: white;
@@ -101,9 +106,6 @@ width: 83px;
 }
 @media (max-width: 900px){
     box-sizing: content-box;
-    text-decoration: none;
-    color: yellow;
-    border-radius: 8px;
     width: 46px;
     }
 `

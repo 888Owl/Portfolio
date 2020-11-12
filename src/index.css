@@ -107,6 +107,17 @@
   }
 }
 
+@-webkitkeyframes shrinker {
+  from {
+    z-index: 5;
+    opacity: 1;
+  }
+  to {
+    z-index: -2;
+    opacity: 0;
+  }
+}
+
 @keyframes shrinker {
   from {
     z-index: 5;

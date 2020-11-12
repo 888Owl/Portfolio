@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 import HomePageRouter from '../HomePageRouter'
 import BG from '../../Images/BG.png'
+
 const Container: React.FC = (props) => {
 
     const [flipped, setFlipped] = useState(false)
@@ -35,7 +36,6 @@ display: flex;
 flex-flow: column;
 justify-content: center;
 width: 100%;
-height: 100%;
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: 100% 100%;

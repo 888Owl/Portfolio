@@ -92,11 +92,14 @@ const PersonalProffiency: React.FC = () => {
                     <MiniHeader>Sourcetree</MiniHeader>
                     <StyledImg loading="lazy" src={sourcetree} />
                 </StyledInnerGrouping>
+                <HorizontalSpacer />
                 <StyledInnerGrouping>
                     <MiniHeader>Vue</MiniHeader>
                     <StyledImg loading="lazy" src={vue} />
                 </StyledInnerGrouping>
+                <HorizontalSpacer />
                 <StyledInnerGrouping/>
+                <HorizontalSpacer />
                 <StyledInnerGrouping/>
             </StyledInnerContainer>
         </Container>
@@ -141,8 +144,11 @@ flex-flow: row;
 margin-top: 40px;
 justify-content: space-around;
 justify-items: space-around;
-width: 100%;
+width: 96%;
 height: 15%;
+margin-left: 2%;
+margin-left: 2%;
+
 `
 
 const StyledInnerGrouping = styled.div`

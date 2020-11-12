@@ -88,13 +88,14 @@ height: 100vh;
 position: absolute;
 right: 0;
 top: 0;
-background-color: rgba(0,0,13, 0.6);
 @media (min-width: 900px){
         width: 30vw;
-   }
+        background-color: rgba(0,0,13, 0.6);
+    }
    @media (max-width: 900px){
         width: 100vw;
-   }
+        background-color: rgba(0,0,13, 0.8);
+    }
 `
 
 export default HomePage

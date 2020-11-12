@@ -50,26 +50,38 @@ const StyledHeader = styled.h3`
     text-align: center;
        }
        @media (max-width: 900px){
-        margin-top:550px;
+        margin-top:25px;
         text-align: center;
        }
 `
 
 const StyledtopP = styled.p`
     text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
-    font-weight: 200;
+    font-weight: 400;
     line-height: 1.3em;
+    @media (min-width: 900px){
+        margin-left: 20%;
+    margin-right: 20%;
+    }
+    @media (max-width: 900px){
+        margin-left: 5%;
+    margin-right: 5%;
+    }
 `
 
 const StyledP = styled.p`
     margin-top: 25px;
     text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
-    font-weight: 200;
+    font-weight: 400;
     line-height: 1.3em;
+    @media (min-width: 900px){
+        margin-left: 20%;
+    margin-right: 20%;
+    }
+    @media (max-width: 900px){
+        margin-left: 5%;
+    margin-right: 5%;
+    }
 `
 
 const StyledNote = styled.p`
@@ -77,10 +89,16 @@ const StyledNote = styled.p`
     margin-top: 25px;
     text-align: center;
     text-decoration: underline;
+    font-weight: 400;
+    line-height: 1.3em;
+    @media (min-width: 900px){
     margin-left: 20%;
     margin-right: 20%;
-    font-weight: 200;
-    line-height: 1.3em;
+    }
+    @media (max-width: 900px){
+    margin-left: 5%;
+    margin-right: 5%;
+    }
 `
 
 export default Me;

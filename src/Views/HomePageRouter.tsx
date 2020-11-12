@@ -38,7 +38,6 @@ const HomePageRouter: React.FC = () => {
             <RouterLink to='/Skills' text="Skills" />
             <RouterLink to='/hackathons' text="Hackathons" />
             </Shown>
-            {/* <RouterLink to='/collages' text="Collages" /> */}
             <RouterLink to='/resume' text="Resume" />
             <RouterLink to='/socials' text="Contact" />
         </StyledSectionsHolder>
