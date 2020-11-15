@@ -12,6 +12,7 @@ import wiki from '../../Images/wiki.png'
 import rotatingowl from '../../Images/rotatingowl.png'
 import draganddrop from '../../Images/dragndrop.png'
 import cryptoCompare from '../../Images/cryptoCompare.png'
+import cypher from '../../Images/cypher.png'
 
 
 const Projects: React.FC = () => {
@@ -71,6 +72,7 @@ const Projects: React.FC = () => {
 
             <HorizontalSpacer />
 
+
             <StyledInnerContainer>
                 <InnerGroup
                     Isrc={rotatingowl}
@@ -94,6 +96,22 @@ const Projects: React.FC = () => {
                     ModalText="A project i built to learn about creating drag and drop elements on a webpage, with the HTML drag and drop api and vanilla javascript."
                 />
             </StyledInnerContainer>
+
+            <HorizontalSpacer />
+
+            <StyledInnerContainer>
+
+            <EmptyGroup />
+
+                <InnerGroup
+                    Isrc={cypher}
+                    Ialt='A simple page built with HTML CSS and Javascript, that allows the user to give basic encryption to a message and add a pin for more complexity, with the pin this basic encryption can be reversed.'
+                    Ihref="https://eager-borg-ea6e3f.netlify.app/"
+                    Chref="https://github.com/888Owl/projectsForGithub/tree/main/text-encrypter"
+                    ModalText="A simple page built with HTML CSS and Javascript, that allows the user to give basic encryption to a message and add a pin for more complexity, with the pin this basic encryption can be reversed."
+                />
+                <EmptyGroup />
+            </StyledInnerContainer>
         </Container>
     )
 }
@@ -108,13 +126,13 @@ width: 100%;
 height: 15%;
 `
 
-// const EmptyGroup = styled.div`
-// width: 33%;
-// height: 100px;
-// display: flex;
-// flex-direction: column;
-// align-items: center;
-// `
+const EmptyGroup = styled.div`
+width: 33%;
+height: 100px;
+display: flex;
+flex-direction: column;
+align-items: center;
+`
 
 const StyledHeader = styled.h3`
 text-align: center;
