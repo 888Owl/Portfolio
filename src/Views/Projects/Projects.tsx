@@ -12,7 +12,7 @@ import wiki from '../../Images/wiki.png'
 import rotatingowl from '../../Images/rotatingowl.png'
 import draganddrop from '../../Images/dragndrop.png'
 import cryptoCompare from '../../Images/cryptoCompare.png'
-import cypher from '../../Images/cypher.png'
+import cypher from '../../Images/cypher.jpg'
 
 
 const Projects: React.FC = () => {
