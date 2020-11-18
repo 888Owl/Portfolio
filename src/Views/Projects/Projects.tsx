@@ -19,6 +19,7 @@ const Projects: React.FC = () => {
 
     return (
         <Container>
+
             <StyledHeader>My personal Projects,<br />some for fun and some for utility.</StyledHeader>
             <StyledInnerContainer>
                 <InnerGroup
@@ -136,6 +137,7 @@ align-items: center;
 
 const StyledHeader = styled.h3`
 text-align: center;
+margin-top: 5%;
 `
 const HorizontalSpacer = styled.div`
 @media (min-width: 900px){
